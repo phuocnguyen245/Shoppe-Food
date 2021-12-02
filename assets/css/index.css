@@ -3,11 +3,12 @@
     src: url("../fonts/helveticaneue.ttf")
 }
 * {
-    box-sizing: inherit;
+    box-sizing: border-box;
     font-family: HelveticaNeuee;
+    letter-spacing: 0.5px;
 }
 .flex{
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     align-items: center;
 }
