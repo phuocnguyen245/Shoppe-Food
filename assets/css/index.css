@@ -1,0 +1,45 @@
+ @font-face {
+    font-family: HelveticaNeuee;
+    src: url("../fonts/helveticaneue.ttf")
+}
+* {
+    box-sizing: inherit;
+    font-family: HelveticaNeuee;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.html{
+    font-size: 70.5%;
+    line-height: 1.6rem;
+    font-family: "Be Vietnam Pro", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+.shopeefoodlogo{
+    height:30px;
+}
+.dropdown-item{
+    width: unset;
+}
+.nav-item{
+    display: flex;
+    padding: 12px 15px;
+    border-bottom: 4px solid transparent;
+}
+.container{
+    width: 1200px !important;
+    max-width: 1200px !important;
+}
+.active-color{
+    display: block;
+    height: calc(100% - 4px);
+    color: #f14d2d;
+    border-bottom: 4px solid  #f14d2d;
+    font-weight: bold;
+}

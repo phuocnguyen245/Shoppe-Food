@@ -1,0 +1,113 @@
+header .container .nav-item {
+  cursor: pointer;
+}
+
+header .container .nav-item a {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+header .container .nav-item a:hover {
+  color: #f14d2d;
+  font-weight: bold;
+}
+
+header .container .btn-search {
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+header .container .btn-search:hover {
+  color: #f14d2d;
+}
+
+header .container .btn-login .btn {
+  color: #f14d2d;
+  background: #fff;
+  border: 1px solid #f14d2d;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+header .container .btn-login .btn:hover {
+  -webkit-box-shadow: 2px 2px 4px #f14d2d;
+          box-shadow: 2px 2px 4px #f14d2d;
+}
+
+.content-container {
+  background: url(/assets/img/main-banner.jpg);
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  top: 70px;
+  right: -10px;
+  left: 0;
+}
+
+.content-container .left {
+  position: fixed;
+  margin-top: 60px;
+}
+
+.content-container .left__text h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.content-container .left__search {
+  margin-bottom: 16px;
+  width: 100%;
+  position: relative;
+}
+
+.content-container .left__search input[type="text"] {
+  width: 80%;
+  padding-right: 75px;
+  padding-left: 10px;
+  height: 50px;
+  border: 0;
+  border-radius: 6px 10px 10px 6px;
+}
+
+.content-container .left__search a {
+  text-decoration: none;
+}
+
+.content-container .left__search a button {
+  width: 10%;
+  height: 33px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 6px 6px 0;
+  padding-top: 11px;
+}
+
+.content-container .left__menu {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+}
+
+.content-container .left__menu__item {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 10px 27px;
+  margin: 0 8px 14px;
+}
+
+.content-container .left__menu__item:hover {
+  background: #fff;
+  color: #000;
+}
+/*# sourceMappingURL=main.css.map */
