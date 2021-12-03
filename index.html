@@ -21,27 +21,36 @@
     <div class="root">
         <div class="wrapper">
             <header class="header">
-                <div class="container-fluid flex bg-white pt-2">
-                    <div class="container">
-                        <div class="row justify-content-between align-items-center">
-                            <div class="col-1.8">
+                <div class="container-header">
+                    <div class="container p-2">
+                        <div class="row p-0 justify-content-between align-items-center">
+                            <div class="col-2 p-0">
                                 <img class="shopeefoodlogo" src="./assets/img/shopeefoodvn.png" alt="">
 
                             </div>
                             <div class="dropdown">
-                                <button class="btn btn-light btn-outline-dark dropdown-toggle" type="button"
+                                <button class="btn btn-light dropdown-toggle fz-14" type="button"
                                     id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
                                     Đà Nẵng
                                 </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item bg-light" href="#">Hà Nội</a>
-                                    <a class="dropdown-item bg-light" href="#">Hồ Chí Minh</a>
-                                    <a class="dropdown-item bg-light" href="#">Hải Phòng</a>
+                                <div class="dropdown-menu fz-14" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item bg-light" href="#">
+                                        <span>Hà Nội</span>
+                                        <span>1000000 địa điểm</span>
+                                    </a>
+                                    <a class="dropdown-item bg-light" href="#">
+                                        <span>TP. HCM</span>
+                                        <span>1 địa điểm</span>
+                                    </a>
+                                    <a class="dropdown-item bg-light" href="#">
+                                        <span>Hải Phòng</span>
+                                        <span>1 địa điểm</span>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-7 flex justify-content-start">
-                                <div class="nav-item active-color"><a href=""></a>Đồ ăn</div>
+                            <div class="col-6 flex justify-content-start">
+                                <div class="nav-item r"><a href=""></a>Đồ ăn</div>
                                 <div class="nav-item"><a href=""></a>Thực phẩm</div>
                                 <div class="nav-item"><a href=""></a>Bia</div>
                                 <div class="nav-item"><a href=""></a>Hoa</div>
@@ -61,274 +70,473 @@
                     </div>
                 </div>
             </header>
-            <div class="container">
-                <div class="content-container-left">
-                    <div class="container">
-                        <div class="row align-center justify-content-between">
-                            <div class="col-5 p-0">
-                                <div class="left text-white col-4">
-                                    <div class="left__text">
-                                        <h1>Đặt đồ ăn, giao hàng từ 20'...</h1>
-                                        <p>Có 9047 Địa Điểm Ở Đà Nẵng Từ 06:00 - 22:00</p>
-                                    </div>
-                                    <div class="left__search col-12 col-sm-12 col-md-12 p-0">
-                                        <input type="text" placeholder="Tìm địa điểm, món ăn, địa chỉ" />
-                                        <a href="">
-                                            <button class="btn">
-                                                <i class="fa fa-search text-white"></i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                    <div class="left__menu flex">
-                                        <a class="left__menu__item" href="">All</a>
-                                        <a class="left__menu__item" href="">Đồ ăn</a>
-                                        <a class="left__menu__item" href="">Đồ uống</a>
-                                        <a class="left__menu__item" href="">Đồ chay</a>
-                                        <a class="left__menu__item" href="">Bánh kem</a>
-                                        <a class="left__menu__item" href="">Tráng miệng</a>
-                                        <a class="left__menu__item" href="">Đồ ăn</a>
-                                        <a class="left__menu__item" href="">Đồ ăn</a>
-                                        <a class="left__menu__item" href="">Đồ ăn</a>
-                                        <a class="left__menu__item" href="">Đồ ăn</a>
-                                    </div>
-                                    <div class="left__text">
-                                        <p>Sử dụng App ShopeeFood để có nhiều giảm giá
-                                            <br>và trải nghiệm tốt hơn
-                                        </p>
-                                    </div>
-                                    <div class="left__connect">
-                                        <a href=""></a>
-                                        <a href=""></a>
-                                    </div>
-                                </div>
+            <div class="content-container-left">
+                <div class="container">
+                    <div class="left t-w col-5">
+                        <div class="left__text t-w">
+                            <h1>Đặt đồ ăn, giao hàng từ 20'...</h1>
+                            <p class="t-w">Có 9047 Địa Điểm Ở Đà Nẵng Từ 06:00 - 22:00</p>
+                        </div>
+                        <div class="left__search col-12 col-sm-12 col-md-12 p-0">
+                            <input type="text" placeholder="Tìm địa điểm, món ăn, địa chỉ" />
+                            <a href="">
+                                <button class="btn">
+                                    <i class="fa fa-search text-white"></i>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="left__menu flex">
+                            <a class="left__menu__item" href="">All</a>
+                            <a class="left__menu__item" href="">Đồ ăn</a>
+                            <a class="left__menu__item" href="">Đồ uống</a>
+                            <a class="left__menu__item" href="">Đồ chay</a>
+                            <a class="left__menu__item" href="">Bánh kem</a>
+                            <a class="left__menu__item" href="">Tráng miệng</a>
+                            <a class="left__menu__item" href="">Đồ ăn</a>
+                            <a class="left__menu__item" href="">Đồ ăn</a>
+                            <a class="left__menu__item" href="">Đồ ăn</a>
+                            <a class="left__menu__item" href="">Đồ ăn</a>
+                        </div>
+                        <div class="left__text">
+                            <p class="t-w">Sử dụng App ShopeeFood để có nhiều giảm giá
+                                <br>và trải nghiệm tốt hơn
+                            </p>
+                        </div>
+                        <div class="left__connect flex justify-content-start">
+                            <div class="pr-4">
+                                <a href="">
+                                    <img src="./assets/img/AppStore-vn.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <img src="./assets/img/PlayStore-vn.png" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="content-container-right">
-                    <div class="col-xl-12 col-md-12 col-sm-12 p-0">
-                        <div class="right">
-                            <section class="right-wrapper">
-                                <div class="right__title">
-                                    <span><b>Đồ ăn</b></span>
-                                    <span>Chọn địa chỉ giao hàng</span>
-                                </div>
-                            </section>
-                            <section class="right-wrapper">
-                                <div class="right__title">
-                                    <span><b>Ưu đãi</b></span>
-                                </div>
-                                <div class="right__list">
-                                    <div class="row m-0">
-                                        <div class="col-4 p-2 right-item">
-                                            <a class="">
-                                                <img src="./assets/img/item1.jpg" alt="">
-                                                <div class="right-item__desc">
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                        <b>Quán ăn Phương Mập</b></p>
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14 An Nhơn 9,
-                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                                </div>
-                                                <div class="right-item__disc flex justify-content-start pl-3">
-                                                    <i class="fas fa-tag pr-2"></i>
-                                                    <p class="m-0">Giảm món</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-4 p-2 right-item">
-                                            <a class="">
-                                                <img src="./assets/img/item1.jpg" alt="">
-                                                <div class="right-item__desc">
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                        <b>Quán ăn Phương Mập</b></p>
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14 An Nhơn 9,
-                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                                </div>
-                                                <div class="right-item__disc flex justify-content-start pl-3">
-                                                    <i class="fas fa-tag pr-2"></i>
-                                                    <p class="m-0">Giảm món</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-4 p-2 right-item">
-                                            <a class="">
-                                                <img src="./assets/img/item1.jpg" alt="">
-                                                <div class="right-item__desc">
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                        <b>Quán ăn Phương Mập</b></p>
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14 An Nhơn 9,
-                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                                </div>
-                                                <div class="right-item__disc flex justify-content-start pl-3">
-                                                    <i class="fas fa-tag pr-2"></i>
-                                                    <p class="m-0">Giảm món</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-4 p-2 right-item">
-                                            <a class="">
-                                                <img src="./assets/img/item1.jpg" alt="">
-                                                <div class="right-item__desc">
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                        <b>Quán ăn Phương Mập</b></p>
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14 An Nhơn 9,
-                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                                </div>
-                                                <div class="right-item__disc flex justify-content-start pl-3">
-                                                    <i class="fas fa-tag pr-2"></i>
-                                                    <p class="m-0">Giảm món</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-4 p-2 right-item">
-                                            <a class="">
-                                                <img src="./assets/img/item1.jpg" alt="">
-                                                <div class="right-item__desc">
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                        <b>Quán ăn Phương Mập</b></p>
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14 An Nhơn 9,
-                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                                </div>
-                                                <div class="right-item__disc flex justify-content-start pl-3">
-                                                    <i class="fas fa-tag pr-2"></i>
-                                                    <p class="m-0">Giảm món</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-4 p-2 right-item">
-                                            <a class="">
-                                                <img src="./assets/img/item1.jpg" alt="">
-                                                <div class="right-item__desc">
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                        <b>Quán ăn Phương Mập</b></p>
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14 An Nhơn 9,
-                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                                </div>
-                                                <div class="right-item__disc flex justify-content-start pl-3">
-                                                    <i class="fas fa-tag pr-2"></i>
-                                                    <p class="m-0">Giảm món</p>
-                                                </div>
-                                            </a>
-                                        </div>
+            </div>
+            <div class="content-container-right clearfix">
+                <div class="container">
+                    <div class="right">
+                        <div class="right__local">
+                            <span><b>Đồ ăn</b></span>
+                            <span>Chọn địa chỉ giao hàng</span>
+                        </div>
+                        <section class="right-wrapper">
+                            <div class="right__title">
+                                <span><b>Ưu đãi</b></span>
+                            </div>
+                            <div class="right__list">
+                                <div class="row m-0">
+                                    <div class="col-4 p-2 right-item">
+                                        <a class="">
+                                            <img src="./assets/img/item1.jpg" alt="">
+                                            <div class="right-item__desc">
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                    <b>Quán ăn Phương Mập</b>
+                                                </p>
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                    An Nhơn
+                                                    9,
+                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            </div>
+                                            <div class="right-item__disc flex justify-content-start pl-3">
+                                                <i class="fas fa-tag pr-2"></i>
+                                                <p class="m-0">Giảm món</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 p-2 right-item">
+                                        <a class="">
+                                            <img src="./assets/img/item1.jpg" alt="">
+                                            <div class="right-item__desc">
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                    <b>Quán ăn Phương Mập</b>
+                                                </p>
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                    An Nhơn
+                                                    9,
+                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            </div>
+                                            <div class="right-item__disc flex justify-content-start pl-3">
+                                                <i class="fas fa-tag pr-2"></i>
+                                                <p class="m-0">Giảm món</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 p-2 right-item">
+                                        <a class="">
+                                            <img src="./assets/img/item1.jpg" alt="">
+                                            <div class="right-item__desc">
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                    <b>Quán ăn Phương Mập</b>
+                                                </p>
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                    An Nhơn
+                                                    9,
+                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            </div>
+                                            <div class="right-item__disc flex justify-content-start pl-3">
+                                                <i class="fas fa-tag pr-2"></i>
+                                                <p class="m-0">Giảm món</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 p-2 right-item">
+                                        <a class="">
+                                            <img src="./assets/img/item1.jpg" alt="">
+                                            <div class="right-item__desc">
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                    <b>Quán ăn Phương Mập</b>
+                                                </p>
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                    An Nhơn
+                                                    9,
+                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            </div>
+                                            <div class="right-item__disc flex justify-content-start pl-3">
+                                                <i class="fas fa-tag pr-2"></i>
+                                                <p class="m-0">Giảm món</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 p-2 right-item">
+                                        <a class="">
+                                            <img src="./assets/img/item1.jpg" alt="">
+                                            <div class="right-item__desc">
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                    <b>Quán ăn Phương Mập</b>
+                                                </p>
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                    An Nhơn
+                                                    9,
+                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            </div>
+                                            <div class="right-item__disc flex justify-content-start pl-3">
+                                                <i class="fas fa-tag pr-2"></i>
+                                                <p class="m-0">Giảm món</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 p-2 right-item">
+                                        <a class="">
+                                            <img src="./assets/img/item1.jpg" alt="">
+                                            <div class="right-item__desc">
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                    <b>Quán ăn Phương Mập</b>
+                                                </p>
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                    An Nhơn
+                                                    9,
+                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            </div>
+                                            <div class="right-item__disc flex justify-content-start pl-3">
+                                                <i class="fas fa-tag pr-2"></i>
+                                                <p class="m-0">Giảm món</p>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="col-xl-12 col-md-12 col-sm-12 p-0">
-                        <div class="right">
-                            <section class="right-wrapper">
-                                <div class="right__title">
-                                    <span><b>Đồ ăn</b></span>
-                                    <span>Chọn địa chỉ giao hàng</span>
-                                </div>
-                            </section>
-                            <section class="right-wrapper">
-                                <div class="right__title">
-                                    <span><b>Ưu đãi</b></span>
-                                </div>
-                                <div class="right__list">
-                                    <div class="row m-0">
-                                        <div class="col-4 p-2 right-item">
-                                            <a class="">
-                                                <img src="./assets/img/item1.jpg" alt="">
-                                                <div class="right-item__desc">
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                        <b>Quán ăn Phương Mập</b></p>
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14 An Nhơn 9,
-                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                                </div>
-                                                <div class="right-item__disc flex justify-content-start pl-3">
-                                                    <i class="fas fa-tag pr-2"></i>
-                                                    <p class="m-0">Giảm món</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-4 p-2 right-item">
-                                            <a class="">
-                                                <img src="./assets/img/item1.jpg" alt="">
-                                                <div class="right-item__desc">
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                        <b>Quán ăn Phương Mập</b></p>
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14 An Nhơn 9,
-                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                                </div>
-                                                <div class="right-item__disc flex justify-content-start pl-3">
-                                                    <i class="fas fa-tag pr-2"></i>
-                                                    <p class="m-0">Giảm món</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-4 p-2 right-item">
-                                            <a class="">
-                                                <img src="./assets/img/item1.jpg" alt="">
-                                                <div class="right-item__desc">
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                        <b>Quán ăn Phương Mập</b></p>
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14 An Nhơn 9,
-                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                                </div>
-                                                <div class="right-item__disc flex justify-content-start pl-3">
-                                                    <i class="fas fa-tag pr-2"></i>
-                                                    <p class="m-0">Giảm món</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-4 p-2 right-item">
-                                            <a class="">
-                                                <img src="./assets/img/item1.jpg" alt="">
-                                                <div class="right-item__desc">
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                        <b>Quán ăn Phương Mập</b></p>
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14 An Nhơn 9,
-                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                                </div>
-                                                <div class="right-item__disc flex justify-content-start pl-3">
-                                                    <i class="fas fa-tag pr-2"></i>
-                                                    <p class="m-0">Giảm món</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-4 p-2 right-item">
-                                            <a class="">
-                                                <img src="./assets/img/item1.jpg" alt="">
-                                                <div class="right-item__desc">
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                        <b>Quán ăn Phương Mập</b></p>
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14 An Nhơn 9,
-                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                                </div>
-                                                <div class="right-item__disc flex justify-content-start pl-3">
-                                                    <i class="fas fa-tag pr-2"></i>
-                                                    <p class="m-0">Giảm món</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-4 p-2 right-item">
-                                            <a class="">
-                                                <img src="./assets/img/item1.jpg" alt="">
-                                                <div class="right-item__desc">
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                        <b>Quán ăn Phương Mập</b></p>
-                                                    <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14 An Nhơn 9,
-                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                                </div>
-                                                <div class="right-item__disc flex justify-content-start pl-3">
-                                                    <i class="fas fa-tag pr-2"></i>
-                                                    <p class="m-0">Giảm món</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                            </div>
+                        </section>
+                        <section class="right-wrapper">
+                            <div class="right__title">
+                                <span><b>Ưu đãi</b></span>
+                            </div>
+                            <div class="right__list">
+                                <div class="row m-0">
+                                    <div class="col-4 p-2 right-item">
+                                        <a class="">
+                                            <img src="./assets/img/item1.jpg" alt="">
+                                            <div class="right-item__desc">
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                    <b>Quán ăn Phương Mập</b>
+                                                </p>
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                    An Nhơn
+                                                    9,
+                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            </div>
+                                            <div class="right-item__disc flex justify-content-start pl-3">
+                                                <i class="fas fa-tag pr-2"></i>
+                                                <p class="m-0">Giảm món</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 p-2 right-item">
+                                        <a class="">
+                                            <img src="./assets/img/item1.jpg" alt="">
+                                            <div class="right-item__desc">
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                    <b>Quán ăn Phương Mập</b>
+                                                </p>
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                    An Nhơn
+                                                    9,
+                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            </div>
+                                            <div class="right-item__disc flex justify-content-start pl-3">
+                                                <i class="fas fa-tag pr-2"></i>
+                                                <p class="m-0">Giảm món</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 p-2 right-item">
+                                        <a class="">
+                                            <img src="./assets/img/item1.jpg" alt="">
+                                            <div class="right-item__desc">
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                    <b>Quán ăn Phương Mập</b>
+                                                </p>
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                    An Nhơn
+                                                    9,
+                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            </div>
+                                            <div class="right-item__disc flex justify-content-start pl-3">
+                                                <i class="fas fa-tag pr-2"></i>
+                                                <p class="m-0">Giảm món</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 p-2 right-item">
+                                        <a class="">
+                                            <img src="./assets/img/item1.jpg" alt="">
+                                            <div class="right-item__desc">
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                    <b>Quán ăn Phương Mập</b>
+                                                </p>
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                    An Nhơn
+                                                    9,
+                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            </div>
+                                            <div class="right-item__disc flex justify-content-start pl-3">
+                                                <i class="fas fa-tag pr-2"></i>
+                                                <p class="m-0">Giảm món</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 p-2 right-item">
+                                        <a class="">
+                                            <img src="./assets/img/item1.jpg" alt="">
+                                            <div class="right-item__desc">
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                    <b>Quán ăn Phương Mập</b>
+                                                </p>
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                    An Nhơn
+                                                    9,
+                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            </div>
+                                            <div class="right-item__disc flex justify-content-start pl-3">
+                                                <i class="fas fa-tag pr-2"></i>
+                                                <p class="m-0">Giảm món</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 p-2 right-item">
+                                        <a class="">
+                                            <img src="./assets/img/item1.jpg" alt="">
+                                            <div class="right-item__desc">
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                    <b>Quán ăn Phương Mập</b>
+                                                </p>
+                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                    An Nhơn
+                                                    9,
+                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            </div>
+                                            <div class="right-item__disc flex justify-content-start pl-3">
+                                                <i class="fas fa-tag pr-2"></i>
+                                                <p class="m-0">Giảm món</p>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
-                            </section>
-                        </div>
+                            </div>
+                        </section>
+                        
                     </div>
                 </div>
             </div>
+            <div class="container">
+                <div class="now-container-coporation" style="position: relative;">
+                    <h4 class="title"><span>Đơn hàng của bạn sẽ được bảo quản như thế nào?</span></h4><span>
+                        <p class="font15"> ShopeeFood sẽ bảo quản đơn của bạn bằng túi &amp; thùng để chống nắng mưa,
+                            giữ nhiệt... trên đường đi một cách tốt nhất. </p>
+                    </span><img src="/app/assets/img/Box-food-preservation-footer.png?82adfd2ec19091256d09a94dac77aaba"
+                        alt="food preservation">
+                </div>
+                <div class="now-container-coporation img-right">
+                    <h4 class="title"><span>ShopeeFood Merchant App</span></h4><span>
+                        <p class="font14">- <b>ShopeeFood Merchant</b> là ứng dụng quản lý đơn hàng cho các nhà hàng đối
+                            tác của dịch vụ đặt món tận nơi </p>
+                        <p class="font14"> - <b>ShopeeFood.vn</b> luôn sẵn sàng hợp tác với các nhà hàng, quán ăn,
+                            cafe... để mở rộng kinh doanh cũng như gia tăng khách hàng. Hãy kết nối vào hệ thống đặt và
+                            giao hàng để giảm bớt chi phí quản lý, vận hành, marketing, công nghệ... <br> Đăng ký tham
+                            gia: <b><a href="https://shopeefood.vn/merchant-register" target="_blank">tại đây</a></b>
+                        </p>
+                    </span>
+                    <div class="bg-corporation"><img
+                            src="/app/assets/img/banner-phone-reg-merchant.png?d657e88bd087afc6919b1c6c6da0dc49"
+                            alt="NowMerchant App" title="NowMerchant App" width="294px"></div>
+                </div>
+                <div class="now-container-coporation img-right">
+                    <h4 class="title"><a href="/tuyen-dung"><span><span
+                                    style="color: #EE4D2D;font-weight: bold;">ShopeeFood.vn</span> Hợp tác nhân viên
+                                giao nhận - ShopeeFood Driver</span></a></h4><span>
+                        <p class="font15">Giúp bạn tăng thu nhập trong thời gian rảnh rỗi</p>
+                        <p><span style="color: #EE4D2D;font-weight: bold;">ShopeeFood</span> tìm kiếm hợp tác với các cá
+                            nhân để thực hiện việc giao hàng, chúng tôi sẽ cung cấp ứng dụng (app), 1 số dụng cụ cần
+                            thiết để bạn có thể tiếp nhận &amp; giao hàng, kiếm thêm thu nhập <br>Đăng ký tham gia <a
+                                href="https://shopeefood.vn/tuyen-dung" style="color: #4D77A2; font-weight:bold">tại
+                                đây</a> hoặc gửi Email qua <a href="mailto:tuyendung@gofast.vn"
+                                style="color: #4D77A2; font-weight:bold">tuyendung@gofast.vn</a> - hoặc gọi qua số điện
+                            thoại (028) 7109 9179. </p>
+                    </span>
+                    <div class="bg-corporation"><img
+                            src="/app/assets/img/bg-deliverynow-dat-mon-truc-tuyen-giao-hang-tan-noi.png?0a045d11888296eb26473f6126cad3f4"
+                            class="bg-deliverynow" alt="bg-deliverynow-dat-mon-truc-tuyen-giao-hang-tan-noi"
+                            title="bg-deliverynow-dat-mon-truc-tuyen-giao-hang-tan-noi" width="170px"
+                            data-change-lang="" style="width: 170px;"></div>
+                </div>
+                <div class="seo-footer-link">
+                    <p class="seo-footer-link__head">Danh mục</p>
+                    <div class="seo-footer-link__body">
+                        <div class="seo-footer-link__item"><a href="https://shopeefood.vn/da-nang/medicine">
+                                <p class="seo-footer-link__title">Thuốc</p>
+                            </a>
+                            <ul class="seo-footer-link__sub-item-wrapper"><a
+                                    href="https://shopeefood.vn/da-nang/medicine/danh-sach-dia-diem-phuc-vu-hoa-my-pham-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Hoá mỹ phẩm</a><a
+                                    href="https://shopeefood.vn/da-nang/medicine/danh-sach-dia-diem-phuc-vu-bcs-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">BCS</a><a
+                                    href="https://shopeefood.vn/da-nang/medicine/danh-sach-dia-diem-phuc-vu-thiet-bi-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Thiết bị</a><a
+                                    href="https://shopeefood.vn/da-nang/medicine/danh-sach-dia-diem-phuc-vu-thuoc-tay-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Thuốc tây</a><a
+                                    href="https://shopeefood.vn/da-nang/medicine/danh-sach-dia-diem-phuc-vu-khau-trang-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Khẩu trang</a><a
+                                    href="https://shopeefood.vn/da-nang/medicine/danh-sach-dia-diem-phuc-vu-khan-cap-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Khẩn cấp</a></ul>
+                        </div>
+                        <div class="seo-footer-link__item"><a href="https://shopeefood.vn/da-nang/pets">
+                                <p class="seo-footer-link__title">Thú cưng</p>
+                            </a>
+                            <ul class="seo-footer-link__sub-item-wrapper"><a
+                                    href="https://shopeefood.vn/da-nang/pets/danh-sach-dia-diem-phuc-vu-thu-cung-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Thú cưng</a></ul>
+                        </div>
+                        <div class="seo-footer-link__item"><a href="https://shopeefood.vn/ho-chi-minh/food">
+                                <p class="seo-footer-link__title">Đồ ăn</p>
+                            </a>
+                            <ul class="seo-footer-link__sub-item-wrapper"><a
+                                    href="https://shopeefood.vn/da-nang/food/danh-sach-dia-diem-phuc-vu-streetfood-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Vỉa hè</a><a
+                                    href="https://shopeefood.vn/da-nang/food/danh-sach-dia-diem-phuc-vu-hotpot-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Món lẩu</a><a
+                                    href="https://shopeefood.vn/da-nang/food/danh-sach-dia-diem-phuc-vu-rice-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Cơm hộp</a></ul>
+                        </div>
+                        <div class="seo-footer-link__item"><a href="https://shopeefood.vn/da-nang/fmcg">
+                                <p class="seo-footer-link__title">Sản phẩm</p>
+                            </a>
+                            <ul class="seo-footer-link__sub-item-wrapper"><a
+                                    href="https://shopeefood.vn/da-nang/fmcg/danh-sach-dia-diem-phuc-vu-my-pham-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Mỹ phẩm</a><a
+                                    href="https://shopeefood.vn/da-nang/fmcg/danh-sach-dia-diem-phuc-vu-do-choi-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Đồ chơi</a><a
+                                    href="https://shopeefood.vn/da-nang/fmcg/danh-sach-dia-diem-phuc-vu-sua-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Sữa</a><a
+                                    href="https://shopeefood.vn/da-nang/fmcg/danh-sach-dia-diem-phuc-vu-ta-bim-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Tã bỉm</a><a
+                                    href="https://shopeefood.vn/da-nang/fmcg/danh-sach-dia-diem-phuc-vu-dung-cu-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Dụng cụ</a><a
+                                    href="https://shopeefood.vn/da-nang/fmcg/danh-sach-dia-diem-phuc-vu-quan-ao-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Quần áo</a><a
+                                    href="https://shopeefood.vn/da-nang/fmcg/danh-sach-dia-diem-phuc-vu-giay-dep-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Giày dép</a><a
+                                    href="https://shopeefood.vn/da-nang/fmcg/danh-sach-dia-diem-phuc-vu-dien-tu-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Điện tử</a><a
+                                    href="https://shopeefood.vn/da-nang/fmcg/danh-sach-dia-diem-phuc-vu-trang-suc-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Trang sức</a></ul>
+                        </div>
+                        <div class="seo-footer-link__item"><a href="https://shopeefood.vn/da-nang/fresh">
+                                <p class="seo-footer-link__title">Thực phẩm</p>
+                            </a>
+                            <ul class="seo-footer-link__sub-item-wrapper"><a
+                                    href="https://shopeefood.vn/da-nang/fresh/danh-sach-dia-diem-phuc-vu-an-chay-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Ăn chay</a><a
+                                    href="https://shopeefood.vn/da-nang/fresh/danh-sach-dia-diem-phuc-vu-trai-cay-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Trái cây</a><a
+                                    href="https://shopeefood.vn/da-nang/fresh/danh-sach-dia-diem-phuc-vu-gia-vi-106-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Gia vị</a><a
+                                    href="https://shopeefood.vn/da-nang/fresh/danh-sach-dia-diem-phuc-vu-dac-san-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Đặc sản</a><a
+                                    href="https://shopeefood.vn/da-nang/fresh/danh-sach-dia-diem-phuc-vu-thit-trung-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Thịt/trứng</a><a
+                                    href="https://shopeefood.vn/da-nang/fresh/danh-sach-dia-diem-phuc-vu-hai-san-152-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Hải sản</a><a
+                                    href="https://shopeefood.vn/da-nang/fresh/danh-sach-dia-diem-phuc-vu-rau-cu-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Rau củ</a><a
+                                    href="https://shopeefood.vn/da-nang/fresh/danh-sach-dia-diem-phuc-vu-gao-mi-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Gạo mì</a><a
+                                    href="https://shopeefood.vn/da-nang/fresh/danh-sach-dia-diem-phuc-vu-do-uong-an-vat-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Đồ uống/Ăn vặt</a></ul>
+                        </div>
+                        <div class="seo-footer-link__item"><a href="https://shopeefood.vn/da-nang/flowers">
+                                <p class="seo-footer-link__title">Hoa</p>
+                            </a>
+                            <ul class="seo-footer-link__sub-item-wrapper"><a
+                                    href="https://shopeefood.vn/da-nang/flowers/danh-sach-dia-diem-phuc-vu-chia-buon-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Chia buồn</a><a
+                                    href="https://shopeefood.vn/da-nang/flowers/danh-sach-dia-diem-phuc-vu-cay-canh-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Cây cảnh</a><a
+                                    href="https://shopeefood.vn/da-nang/flowers/danh-sach-dia-diem-phuc-vu-chuc-mung-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Chúc mừng</a><a
+                                    href="https://shopeefood.vn/da-nang/flowers/danh-sach-dia-diem-phuc-vu-sinh-nhat-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Sinh nhật</a><a
+                                    href="https://shopeefood.vn/da-nang/flowers/danh-sach-dia-diem-phuc-vu-tinh-yeu-giao-tan-noi"
+                                    class="seo-footer-link__sub-item">Tình yêu</a></ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
         </div>
-    </div>
 
+    </div>
+    <script>
+
+        function a() {
+            const high = document.querySelector('.content-container-right')
+
+            const hight = high.offsetHeight;
+            console.log(hight);
+            console.log(screen.availHeight);
+
+            const unfix = document.querySelector('.content-container-left')
+
+            const top = hight - screen.availHeight - 23
+            console.log(top);
+
+            document.onscroll = function () {
+                const scroll = document.documentElement.scrollTop
+                console.log(scroll);
+                if (scroll > top) {
+                    unfix.classList.add('absolute')
+                    unfix.style.top = top+'px'
+                } else {
+                    unfix.classList.remove('absolute')
+                    unfix.style.top = '60px'
+                }
+            }
+        }
+        a()
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -339,6 +547,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
