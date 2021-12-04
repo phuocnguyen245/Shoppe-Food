@@ -13,15 +13,12 @@
     justify-content: space-between;
     align-items: center;
 }
-.html{
-    font-size: 70.5%;
+
+html, body {
+    overflow-x: hidden;
     line-height: 1.6rem;
-    font-family: "Be Vietnam Pro", sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
-body {
-    overflow-x: hidden;
 }
 .shopeefoodlogo{
     height:30px;
@@ -51,4 +48,7 @@ body {
 }
 .absolute{
     position: absolute;
+}
+.block{
+    display: block;
 }

@@ -1,0 +1,24 @@
+.scroll-to-top {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  bottom: 20px;
+  right: 50px;
+  text-align: center;
+  i{
+    color: white;
+  }
+  animation: slideInBottom ease 1s;
+  display: none;
+}
+@keyframes slideInBottom {
+  from{
+    opacity: 0;
+    transform: translateY(20px)
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0)
+  }
+}

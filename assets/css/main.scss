@@ -1,8 +1,13 @@
+@import "modal";
 $primary-color: #f14d2d;
 $primary-textColor: black;
 $blue: #0288d1;
 .wrapper {
   width: 100%;
+  background: #f2f2f2;
+}
+.primary-color {
+  color: #f14d2d;
 }
 b {
   color: $blue;
@@ -45,7 +50,7 @@ header {
         display: flex;
 
         cursor: pointer;
-        padding: 12px;
+        padding: 10px 12px;
         a {
           color: $primary-textColor;
           font-size: 14px;
@@ -201,7 +206,7 @@ header {
         position: relative;
         &::after {
           position: absolute;
-          content: "";
+          content: " ";
           border-top: 15 px solid red;
           border-right: 15 px solid transparent;
           border-bottom: 15 px solid transparent;
@@ -242,9 +247,8 @@ header {
               margin: 0 !important;
               &:hover {
                 transition: box-shadow 0.25s;
-                // box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%),
-                //   0 4px 15px 0 rgb(0 0 0 / 19%);
-                text-decoration: none;
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2),
+                  0 4px 15px 0 rgba(0, 0, 0, 0.19);
               }
               img {
                 position: relative;
@@ -264,8 +268,13 @@ header {
                   -webkit-box-orient: vertical;
                   display: -webkit-box;
                   padding: 0 8px;
-                  &:last-child {
+                  &:first-child {
+                    font-weight: bold;
                     font-size: 14px;
+                  }
+                  &:last-child {
+                    font-size: 12px;
+                    color: #ccc;
                     border-bottom: 1px solid #ccc;
                   }
                 }
@@ -286,6 +295,147 @@ header {
             }
           }
         }
+      }
+    }
+  }
+}
+.banner-container {
+  padding: 50px 350px 50px 150px;
+  background: #fff;
+  margin-top: 40px;
+  position: relative;
+  &__text {
+    b {
+      letter-spacing: unset;
+    }
+    h4 {
+      font-weight: bold;
+      letter-spacing: unset;
+    }
+    p {
+      font-size: 15px;
+      letter-spacing: unset;
+    }
+  }
+  &__img {
+    display: block;
+    .img-absolute {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 320px;
+    }
+    .img-absolute2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 220px;
+    }
+  }
+}
+footer {
+  .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  > h3 {
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .footer__list {
+    a {
+      color: rgba(0, 0, 0, 0.54);
+      text-decoration: none;
+      &:hover {
+        color: $blue;
+      }
+    }
+    > a {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    .footer__items {
+      padding-bottom: 20px;
+      a {
+        text-decoration: none;
+        font-size: 13.5px;
+        position: relative;
+        &:not(:last-child)::after {
+          position: absolute;
+          padding: 0 1px;
+          top: 50%;
+          transform: translateY(-50%);
+          content: "|";
+        }
+      }
+    }
+  }
+  .footer-col{
+    color: #959595;
+    a{
+      text-decoration: none;
+      color:#959595;
+      color:$blue;
+      &:hover{
+        
+      }
+    }
+    &:nth-child(2){
+      img{
+        width: 122px;
+        margin-bottom: 20px;
+      }
+    }
+    &:nth-child(3){
+      li{
+        margin-bottom: 10px;
+        text-align: center;
+        img{
+          width: 100px;
+        }
+      }
+      .row{
+        justify-content: center;
+        li{
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background: #959595;
+          line-height: 30px;
+          margin: 0 10px;
+          i{
+            color: #fff;
+          }
+        }
+      }
+
+    }
+    &:nth-child(4){
+      text-align: right;
+      li{
+        img{
+          width: 140px;
+        }
+      }
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: unset;
+      margin-bottom: 20px;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+      li{
+        font-size: 14px;
       }
     }
   }
