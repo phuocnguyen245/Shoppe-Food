@@ -356,6 +356,10 @@ header .container-header .container .btn-login .btn:hover {
   color: #000;
 }
 
+.content-container-right .container .right .right-wrapper .right__list .right-item a .right-item__disc:nth-child(2) div:nth-child(2) {
+  display: none !important;
+}
+
 .content-container-right .container .right .right-wrapper .right__list .right-item a .right-item__disc:nth-child(3) {
   display: none !important;
 }
@@ -515,6 +519,191 @@ footer .footer-col ul {
 
 footer .footer-col ul li {
   font-size: 14px;
+}
+
+.login-form {
+  margin-top: 70px;
+  padding: 40px;
+  background: url(../img/main-banner.jpg);
+  height: 100vh;
+}
+
+.login-form .login-container {
+  width: calc(50% + 30px);
+  padding: 30px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+.login-form .login-container h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.login-form .login-container .button-group .button-control {
+  position: relative;
+  height: 35px;
+  line-height: 35px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.login-form .login-container .button-group .button-control:nth-child(1) {
+  background: #329900;
+}
+
+.login-form .login-container .button-group .button-control:nth-child(1) i {
+  color: #329900;
+}
+
+.login-form .login-container .button-group .button-control:nth-child(2) {
+  background: #187caa;
+}
+
+.login-form .login-container .button-group .button-control:nth-child(2) i {
+  color: #187caa;
+}
+
+.login-form .login-container .button-group .button-control:nth-child(3) {
+  background: #ff5252;
+}
+
+.login-form .login-container .button-group .button-control:nth-child(3) i {
+  color: #ff5252;
+}
+
+.login-form .login-container .button-group .button-control p {
+  color: #fff;
+}
+
+.login-form .login-container .button-group .button-control i {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 50%;
+  line-height: 25px;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+.login-form .login-container .p-title {
+  font-size: 13px;
+  margin: 30px 0 10px;
+  color: #464646;
+}
+
+.login-form .login-container .form .form-group {
+  margin: 0;
+  position: relative;
+}
+
+.login-form .login-container .form .form-group .form-control {
+  padding: 9px 10px 9px 40px;
+}
+
+.login-form .login-container .form .form-group i {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 10px;
+  font-size: 18px;
+  color: #9fa9aa;
+}
+
+.login-form .login-container .form .form-group:nth-child(1) .form-control {
+  border-bottom-left-radius: unset;
+  border-bottom-right-radius: unset;
+  border-bottom: none;
+}
+
+.login-form .login-container .form .form-group:nth-child(2) .form-control {
+  border-top-left-radius: unset;
+  border-top-right-radius: unset;
+}
+
+.login-form .login-container .form .form-group:nth-child(3) {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.login-form .login-container .form .form-group:nth-child(3) .row {
+  padding: 0 15px;
+}
+
+.login-form .login-container .form .form-group:nth-child(3) .row input {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.login-form .login-container .form .form-group:nth-child(3) a {
+  text-decoration: none;
+}
+
+.login-form .login-container .form .form-submit {
+  width: 100%;
+  text-transform: uppercase;
+  background-color: #0288d1;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px 0;
+}
+
+.login-form .login-container .login-policy {
+  color: #707070;
+  font-size: 14px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.login-form .login-container .login-policy u {
+  color: #0288d1;
+}
+
+.login-form p, .login-form label, .login-form h4 {
+  color: #fff !important;
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+  .login-form .container {
+    width: 100%;
+  }
+  .login-form .container .login-container {
+    width: calc(90%);
+  }
+}
+
+@media (max-width: 739px) {
+  header {
+    display: none;
+  }
+  .login-form {
+    margin: 0;
+    padding: auto 20px;
+    background: url(../img/bg-login.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .login-form .container {
+    width: 100%;
+  }
+  .login-form .container .login-container {
+    background-color: transparent;
+    width: calc(100%);
+    padding: 10px;
+  }
+  .login-form .container p, .login-form .container label {
+    color: #fff !important;
+  }
 }
 
 .scroll-to-top {
@@ -706,6 +895,11 @@ footer .footer-col ul li {
   .content-container-right .container .right .right-wrapper .right__list .right-item a .right-item__disc {
     height: 20px;
     line-height: 20px;
+  }
+  .content-container-right .container .right .right-wrapper .right__list .right-item a .right-item__disc:nth-child(2) div:nth-child(2) {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
   .content-container-right .container .right .right-wrapper .right__list .right-item a .right-item__disc:nth-child(3) {
     display: -webkit-box !important;

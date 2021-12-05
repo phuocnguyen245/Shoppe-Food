@@ -24,6 +24,7 @@
   }
 }
 @media (min-width: 1024px) {
+
 }
 
 /* Tablet */
@@ -173,7 +174,13 @@
                 .right-item__disc {
                   height: 20px;
                   line-height: 20px;
-                  
+                  &:nth-child(2){
+                    div{
+                      &:nth-child(2){
+                        display: flex !important;
+                      }
+                    }
+                  }
                   &:nth-child(3) {
                     display: flex !important;
                     margin-left: -10px;

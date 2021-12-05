@@ -293,6 +293,13 @@ header {
                   display: block;
                   color: #000;
                 }
+                &:nth-child(2){
+                  div{
+                    &:nth-child(2){
+                      display: none !important;
+                    }
+                  }
+                }
                 &:nth-child(3){
                   display:none !important;
                 }
@@ -443,5 +450,6 @@ footer {
     }
   }
 }
+@import "loginForm";
 @import "responsive";
 @import "modal";
