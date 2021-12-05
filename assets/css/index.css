@@ -36,9 +36,11 @@ html, body {
 .active-color{
     display: block;
     height: calc(100% - 4px);
-    color: #f14d2d;
     border-bottom: 4px solid  #f14d2d !important;
     font-weight: bold;
+}
+.active-color p{
+    color: #f14d2d;
 }
 .fz-14{
     font-size: 14px;
@@ -51,4 +53,7 @@ html, body {
 }
 .block{
     display: block;
+}
+.show{
+    left: unset !important;
 }

@@ -14,21 +14,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/modal.css">
-    <link type="text/css" rel="stylesheet" href="./assets/css/index.css">
+
+    <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="icon" type="image/png" href="./assets/img/LogoShopeefoodVN.png">
 </head>
 
 <body>
     <div class="root">
         <div class="wrapper">
+
+            <!-- Header -->
+
             <header id="header">
                 <div class="container-header">
                     <div class="container p-2">
                         <div class="row p-2 justify-content-between align-items-center">
                             <div class="col-2 p-0">
                                 <img class="shopeefoodlogo" src="./assets/img/shopeefoodvn.png" alt="">
-
                             </div>
                             <div class="dropdown">
                                 <button class="btn btn-light dropdown-toggle fz-14" type="button"
@@ -36,7 +38,8 @@
                                     aria-expanded="false">
                                     Đà Nẵng
                                 </button>
-                                <div class="dropdown-menu fz-14" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-menu" style="left: unset !important"
+                                    aria-labelledby="dropdownMenuButton">
                                     <a class="dropdown-item bg-light" href="#">
                                         <span>Hà Nội</span>
                                         <span>1000000 địa điểm</span>
@@ -52,14 +55,49 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-6 flex justify-content-start">
-                                <div class="nav-item active-color"><a href=""></a>Đồ ăn</div>
-                                <div class="nav-item"><a href=""></a>Thực phẩm</div>
-                                <div class="nav-item"><a href=""></a>Bia</div>
-                                <div class="nav-item"><a href=""></a>Hoa</div>
-                                <div class="nav-item"><a href=""></a>Siêu thị</div>
-                                <div class="nav-item"><a href=""></a>Thuốc</div>
-                                <div class="nav-item"><a href=""></a>Thú cưng</div>
+                            <div class="flex justify-content-start">
+                                <div class="nav-item active-color">
+                                    <a href="" class="">
+                                        <img style="display: none;" src="./assets/img/imgsmall1.png" alt="">
+                                        <p>Đồ ăn</p>
+                                    </a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="">
+                                        <img style="display: none;" src="./assets/img/imgsmall2.png" alt="">
+                                        <p>Thực phẩm</p>
+                                    </a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="">
+                                        <img style="display: none;" src="./assets/img/imgsmall3.png" alt="">
+                                        <p>Bia</p>
+                                    </a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="">
+                                        <img style="display: none;" src="./assets/img/imgsmall4.png" alt="">
+                                        <p>Hoa</p>
+                                    </a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="">
+                                        <img style="display: none;" src="./assets/img/imgsmall5.png" alt="">
+                                        <p>Siêu thị</p>
+                                    </a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="">
+                                        <img style="display: none;" src="./assets/img/imgsmall6.png" alt="">
+                                        <p>Thuốc</p>
+                                    </a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="">
+                                        <img style="display: none;" src="./assets/img/imgsmall7.png" alt="">
+                                        <p>Thú cưng</p>
+                                    </a>
+                                </div>
                             </div>
                             <div class="col-2 flex align-items-center justify-content-end">
                                 <div class="btn-search pr-3">
@@ -73,6 +111,9 @@
                     </div>
                 </div>
             </header>
+
+            <!-- Menu container -->
+
             <div class="content-container-left">
                 <div class="container">
                     <div class="left t-w col-5">
@@ -120,6 +161,9 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Food Container -->
+
             <div class="content-container-right clearfix">
                 <div class="container">
                     <div class="right">
@@ -133,471 +177,472 @@
                             </div>
                             <div class="right__list">
                                 <div class="row m-0">
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
+                                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-4 p-2 right-item">
+                                        <a class="" href="">
                                             <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            <div>
+                                                <div class="right-item__desc">
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                        Quán ăn Phương Mập
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                        An Nhơn
+                                                        9,
+                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2">
+                                                        <i class="fas fa-tag pr-2"></i>
+                                                        <p class="m-0">Giảm món</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fa fa-dollar pr-2"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2 mr-2">
+                                                        <i class="fas fa-tag pr-1"></i>
+                                                        <p class="m-0">Mã giảm 20k</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fas fa-motorcycle pr-1"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+
                                             </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
+
                                         </a>
                                     </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
+                                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-4 p-2 right-item">
+                                        <a class="" href="">
                                             <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            <div>
+                                                <div class="right-item__desc">
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                        Quán ăn Phương Mập
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                        An Nhơn
+                                                        9,
+                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2">
+                                                        <i class="fas fa-tag pr-2"></i>
+                                                        <p class="m-0">Giảm món</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fa fa-dollar pr-2"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2 mr-2">
+                                                        <i class="fas fa-tag pr-1"></i>
+                                                        <p class="m-0">Mã giảm 20k</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fas fa-motorcycle pr-1"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+
                                             </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
+
                                         </a>
                                     </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
+                                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-4 p-2 right-item">
+                                        <a class="" href="">
                                             <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            <div>
+                                                <div class="right-item__desc">
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                        Quán ăn Phương Mập
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                        An Nhơn
+                                                        9,
+                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2">
+                                                        <i class="fas fa-tag pr-2"></i>
+                                                        <p class="m-0">Giảm món</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fa fa-dollar pr-2"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2 mr-2">
+                                                        <i class="fas fa-tag pr-1"></i>
+                                                        <p class="m-0">Mã giảm 20k</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fas fa-motorcycle pr-1"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+
                                             </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
+
                                         </a>
                                     </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
+                                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-4 p-2 right-item">
+                                        <a class="" href="">
                                             <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            <div>
+                                                <div class="right-item__desc">
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                        Quán ăn Phương Mập
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                        An Nhơn
+                                                        9,
+                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2">
+                                                        <i class="fas fa-tag pr-2"></i>
+                                                        <p class="m-0">Giảm món</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fa fa-dollar pr-2"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2 mr-2">
+                                                        <i class="fas fa-tag pr-1"></i>
+                                                        <p class="m-0">Mã giảm 20k</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fas fa-motorcycle pr-1"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+
                                             </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
+
                                         </a>
                                     </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
+                                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-4 p-2 right-item">
+                                        <a class="" href="">
                                             <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            <div>
+                                                <div class="right-item__desc">
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                        Quán ăn Phương Mập
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                        An Nhơn
+                                                        9,
+                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2">
+                                                        <i class="fas fa-tag pr-2"></i>
+                                                        <p class="m-0">Giảm món</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fa fa-dollar pr-2"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2 mr-2">
+                                                        <i class="fas fa-tag pr-1"></i>
+                                                        <p class="m-0">Mã giảm 20k</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fas fa-motorcycle pr-1"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+
                                             </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
+
                                         </a>
                                     </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
+                                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-4 p-2 right-item">
+                                        <a class="" href="">
                                             <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            <div>
+                                                <div class="right-item__desc">
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                        Quán ăn Phương Mập
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                        An Nhơn
+                                                        9,
+                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2">
+                                                        <i class="fas fa-tag pr-2"></i>
+                                                        <p class="m-0">Giảm món</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fa fa-dollar pr-2"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2 mr-2">
+                                                        <i class="fas fa-tag pr-1"></i>
+                                                        <p class="m-0">Mã giảm 20k</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fas fa-motorcycle pr-1"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+
                                             </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
+
                                         </a>
                                     </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="right-wrapper">
-                            <div class="right__title">
-                                <span><b>Ưu đãi</b></span>
-                            </div>
-                            <div class="right__list">
-                                <div class="row m-0">
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
+                                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-4 p-2 right-item">
+                                        <a class="" href="">
                                             <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            <div>
+                                                <div class="right-item__desc">
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                        Quán ăn Phương Mập
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                        An Nhơn
+                                                        9,
+                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2">
+                                                        <i class="fas fa-tag pr-2"></i>
+                                                        <p class="m-0">Giảm món</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fa fa-dollar pr-2"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2 mr-2">
+                                                        <i class="fas fa-tag pr-1"></i>
+                                                        <p class="m-0">Mã giảm 20k</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fas fa-motorcycle pr-1"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+
                                             </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
+
                                         </a>
                                     </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
+                                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-4 p-2 right-item">
+                                        <a class="" href="">
                                             <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            <div>
+                                                <div class="right-item__desc">
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                        Quán ăn Phương Mập
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                        An Nhơn
+                                                        9,
+                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2">
+                                                        <i class="fas fa-tag pr-2"></i>
+                                                        <p class="m-0">Giảm món</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fa fa-dollar pr-2"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2 mr-2">
+                                                        <i class="fas fa-tag pr-1"></i>
+                                                        <p class="m-0">Mã giảm 20k</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fas fa-motorcycle pr-1"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+
                                             </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
+
                                         </a>
                                     </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
+                                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-4 p-2 right-item">
+                                        <a class="" href="">
                                             <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            <div>
+                                                <div class="right-item__desc">
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                        Quán ăn Phương Mập
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                        An Nhơn
+                                                        9,
+                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2">
+                                                        <i class="fas fa-tag pr-2"></i>
+                                                        <p class="m-0">Giảm món</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fa fa-dollar pr-2"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2 mr-2">
+                                                        <i class="fas fa-tag pr-1"></i>
+                                                        <p class="m-0">Mã giảm 20k</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fas fa-motorcycle pr-1"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+
                                             </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
+
                                         </a>
                                     </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
+                                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-4 p-2 right-item">
+                                        <a class="" href="">
                                             <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            <div>
+                                                <div class="right-item__desc">
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                        Quán ăn Phương Mập
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                        An Nhơn
+                                                        9,
+                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2">
+                                                        <i class="fas fa-tag pr-2"></i>
+                                                        <p class="m-0">Giảm món</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fa fa-dollar pr-2"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2 mr-2">
+                                                        <i class="fas fa-tag pr-1"></i>
+                                                        <p class="m-0">Mã giảm 20k</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fas fa-motorcycle pr-1"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+
                                             </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
+
                                         </a>
                                     </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
+                                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-4 p-2 right-item">
+                                        <a class="" href="">
                                             <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    <b>Quán ăn Phương Mập</b>
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            <div>
+                                                <div class="right-item__desc">
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                        Quán ăn Phương Mập
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                        An Nhơn
+                                                        9,
+                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2">
+                                                        <i class="fas fa-tag pr-2"></i>
+                                                        <p class="m-0">Giảm món</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fa fa-dollar pr-2"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2 mr-2">
+                                                        <i class="fas fa-tag pr-1"></i>
+                                                        <p class="m-0">Mã giảm 20k</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fas fa-motorcycle pr-1"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+
                                             </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
+
                                         </a>
                                     </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
+                                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-4 p-2 right-item">
+                                        <a class="" href="">
                                             <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    <b>Quán ăn Phương Mập</b>
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                            <div>
+                                                <div class="right-item__desc">
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
+                                                        Quán ăn Phương Mập
+                                                    <p class="m-0"
+                                                        title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
+                                                        An Nhơn
+                                                        9,
+                                                        P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2">
+                                                        <i class="fas fa-tag pr-2"></i>
+                                                        <p class="m-0">Giảm món</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fa fa-dollar pr-2"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row flex justify-content-start right-item__disc">
+                                                    <div class="flex justify-content-start pl-2 pr-2 mr-2">
+                                                        <i class="fas fa-tag pr-1"></i>
+                                                        <p class="m-0">Mã giảm 20k</p>
+                                                    </div>
+                                                    <div class="flex justify-content-start align-center pl-2 pr-2">
+                                                        <i class="fas fa-motorcycle pr-1"></i>
+                                                        <p class="m-0">Giá 40.000đ</p>
+                                                    </div>
+                                                </div>
+
                                             </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="right">
-                        <div class="right__local">
-                            <span><b>Đồ ăn</b></span>
-                            <span>Chọn địa chỉ giao hàng</span>
-                        </div>
-                        <section class="right-wrapper">
-                            <div class="right__title">
-                                <span><b>Ưu đãi</b></span>
-                            </div>
-                            <div class="right__list">
-                                <div class="row m-0">
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
-                                            <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                            </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
-                                            <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                            </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
-                                            <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                            </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
-                                            <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                            </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
-                                            <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                            </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
-                                            <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                            </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="right-wrapper">
-                            <div class="right__title">
-                                <span><b>Ưu đãi</b></span>
-                            </div>
-                            <div class="right__list">
-                                <div class="row m-0">
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
-                                            <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                            </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
-                                            <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                            </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
-                                            <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                            </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
-                                            <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    Quán ăn Phương Mập
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                            </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
-                                            <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    <b>Quán ăn Phương Mập</b>
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                            </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-4 p-2 right-item">
-                                        <a class="">
-                                            <img src="./assets/img/item1.jpg" alt="">
-                                            <div class="right-item__desc">
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">
-                                                    <b>Quán ăn Phương Mập</b>
-                                                </p>
-                                                <p class="m-0" title="14 An Nhơn 9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng">14
-                                                    An Nhơn
-                                                    9,
-                                                    P. Mỹ An, Quận Sơn Trà, Đà Nẵng</p>
-                                            </div>
-                                            <div class="right-item__disc flex justify-content-start pl-3">
-                                                <i class="fas fa-tag pr-2"></i>
-                                                <p class="m-0">Giảm món</p>
-                                            </div>
+
                                         </a>
                                     </div>
                                 </div>
@@ -606,9 +651,12 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Banner -->
+
             <div class="container">
                 <section class="container">
-                    <div class="banner-container">
+                    <div class="banner-container banner-1">
                         <div class="banner-container__text">
                             <h4>Đơn hàng của bạn sẽ được bảo quản như thế nào?</h4>
                             <p>ShopeeFood sẽ bảo quản đơn của bạn bằng túi & thùng để chống nắng mưa, giữ nhiệt... trên
@@ -653,11 +701,14 @@
                     </div>
                 </section>
             </div>
+
+            <!-- Footer -->
+
             <footer>
                 <div class="container">
                     <h3>Danh mục</h3>
                     <div class="row">
-                        <div class="col-xl-3 col-sm-6 col-md-6 footer__list">
+                        <div class="col-12 col-sm-6 col-md-3 col-xl-3 footer__list">
                             <a href="">Thuốc</a>
                             <div class="footer__items">
                                 <a href="">Hóa mỹ phẩm</a>
@@ -668,7 +719,7 @@
                                 <a href="">Khẩn cấp</a>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-xl-3 footer__list">
+                        <div class="col-12 col-sm-6 col-md-3 col-xl-3 footer__list">
                             <a href="">Thuốc</a>
                             <div class="footer__items">
                                 <a href="">Hóa mỹ phẩm</a>
@@ -679,7 +730,7 @@
                                 <a href="">Khẩn cấp</a>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-xl-3 footer__list">
+                        <div class="col-12 col-sm-6 col-md-3 col-xl-3 footer__list">
                             <a href="">Thuốc</a>
                             <div class="footer__items">
                                 <a href="">Hóa mỹ phẩm</a>
@@ -690,7 +741,7 @@
                                 <a href="">Khẩn cấp</a>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-xl-3 footer__list">
+                        <div class="col-12 col-sm-6 col-md-3 col-xl-3 footer__list">
                             <a href="">Thuốc</a>
                             <div class="footer__items">
                                 <a href="">Hóa mỹ phẩm</a>
@@ -701,7 +752,7 @@
                                 <a href="">Khẩn cấp</a>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-xl-3 footer__list">
+                        <div class="col-12 col-sm-6 col-md-3 col-xl-3 footer__list">
                             <a href="">Thuốc</a>
                             <div class="footer__items">
                                 <a href="">Hóa mỹ phẩm</a>
@@ -712,7 +763,7 @@
                                 <a href="">Khẩn cấp</a>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-xl-3 footer__list">
+                        <div class="col-12 col-sm-6 col-md-3 col-xl-3 footer__list">
                             <a href="">Thuốc</a>
                             <div class="footer__items">
                                 <a href="">Hóa mỹ phẩm</a>
@@ -723,7 +774,7 @@
                                 <a href="">Khẩn cấp</a>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-xl-3 footer__list">
+                        <div class="col-12 col-sm-6 col-md-3 col-xl-3 footer__list">
                             <a href="">Thuốc</a>
                             <div class="footer__items">
                                 <a href="">Hóa mỹ phẩm</a>
@@ -739,7 +790,7 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="footer-col col-md-6 col-sm-12 col-xl-3">
+                        <div class="footer-col col-md-3 col-sm-12 col-xl-3">
                             <h3>Công ty</h3>
                             <ul class="">
                                 <li><a href="">Giới thiệu</a></li>
@@ -754,7 +805,7 @@
                                 <li><a href="">ShopeeFood Uni</a></li>
                             </ul>
                         </div>
-                        <div class="footer-col col-md-6 col-sm-12 col-xl-2">
+                        <div class="footer-col col-md-2 col-sm-12 col-xl-2">
                             <h3>Ứng dụng ShopeeFood</h3>
                             <ul class="">
                                 <li><a href=""><img src="./assets/img/AppStore-vn.png" alt=""></a></li>
@@ -762,7 +813,7 @@
                                 <li><a href=""><img src="./assets/img/Huawei-gallery-vn.png" alt=""></a></li>
                             </ul>
                         </div>
-                        <div class="footer-col col-md-6 col-sm-12 col-xl-2">
+                        <div class="footer-col col-md-2 col-sm-12 col-xl-2">
                             <ul class="">
                                 <li><img src="./assets/img/Logo-ShopeefoodVN.png" alt=""></li>
                                 <li>© 2021 ShopeeFood</li>
@@ -772,7 +823,7 @@
                                 </div>
                             </ul>
                         </div>
-                        <div class="footer-col col-md-6 col-sm-12 col-xl-5">
+                        <div class="footer-col col-md-5 col-sm-12 col-xl-5">
                             <h3>Địa chỉ công ty</h3>
                             <ul class="">
                                 <li>Công Ty Cổ Phần Foody</li>
@@ -799,16 +850,19 @@
     </div>
     <script>
 
+        // IIFE
+        (function unFixedMenu() {
+            const $ = document.querySelector.bind(document)
+            const $$ = document.querySelectorAll.bind(document)
 
-
-
-        function unFixedMenu() {
-            const high = document.querySelector('.content-container-right')
+            const high = $('.content-container-right')
             const containerRightHeight = high.offsetHeight;
 
-            const unFixed = document.querySelector('.content-container-left')
+            const unFixed = $('.content-container-left')
 
             const top = containerRightHeight - screen.availHeight - 10
+
+            const scrollTop = $('.scroll-to-top')
 
             document.onscroll = function () {
                 const scroll = document.documentElement.scrollTop
@@ -819,20 +873,15 @@
                     unFixed.classList.remove('absolute')
                     unFixed.style.top = '60px'
                 }
-            }
-        }
-        unFixedMenu()
-        function showButtonTop() {
-            const scrollTop = document.querySelector('scroll-to-top')
-            document.onscroll = function () {
-                const scroll = document.documentElement.scrollTop
-                if (scroll < screen.availHeight) {
+                if (scroll > screen.availHeight) {
                     scrollTop.classList.add('block')
-                }else{
-                    scrollTop.classList.add('remove')
+                } else {
+                    scrollTop.classList.remove('block')
                 }
             }
-        }
+        })()
+
+
     </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

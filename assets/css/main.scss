@@ -1,4 +1,3 @@
-@import "modal";
 $primary-color: #f14d2d;
 $primary-textColor: black;
 $blue: #0288d1;
@@ -48,17 +47,20 @@ header {
       }
       .nav-item {
         display: flex;
-
         cursor: pointer;
         padding: 10px 12px;
+        border-bottom: 4px solid transparent;
         a {
           color: $primary-textColor;
-          font-size: 14px;
+          height: fit-content;
+          font-size: 15px;
           text-decoration: none;
-
-          &:hover {
+          &:hover > p {
             color: $primary-color;
             font-weight: bold;
+          }
+          p{
+            margin:0;
           }
         }
       }
@@ -229,7 +231,7 @@ header {
         padding: 12px 30px;
         border-radius: 4px;
         .right__title {
-          margin-left: 7px;
+          margin-left: 8px;
         }
         .right__list {
           width: 100%;
@@ -245,6 +247,7 @@ header {
               display: block;
               border: 1px solid #ccc;
               margin: 0 !important;
+              text-decoration: none;
               &:hover {
                 transition: box-shadow 0.25s;
                 box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2),
@@ -252,7 +255,6 @@ header {
               }
               img {
                 position: relative;
-                border-radius: 6px 6px 0 0;
                 overflow: hidden;
                 height: 120px;
                 width: 100%;
@@ -280,7 +282,7 @@ header {
                 }
               }
               .right-item__disc {
-                padding: 2px;
+                padding-left: 15px;
                 i {
                   color: $primary-color;
                 }
@@ -290,6 +292,9 @@ header {
                   color: $blue;
                   display: block;
                   color: #000;
+                }
+                &:nth-child(3){
+                  display:none !important;
                 }
               }
             }
@@ -377,50 +382,48 @@ footer {
       }
     }
   }
-  .footer-col{
+  .footer-col {
     color: #959595;
-    a{
+    a {
       text-decoration: none;
-      color:#959595;
-      color:$blue;
-      &:hover{
-        
+      color: #959595;
+      color: $blue;
+      &:hover {
       }
     }
-    &:nth-child(2){
-      img{
+    &:nth-child(2) {
+      img {
         width: 122px;
         margin-bottom: 20px;
       }
     }
-    &:nth-child(3){
-      li{
+    &:nth-child(3) {
+      li {
         margin-bottom: 10px;
         text-align: center;
-        img{
+        img {
           width: 100px;
         }
       }
-      .row{
+      .row {
         justify-content: center;
-        li{
+        li {
           width: 30px;
           height: 30px;
           border-radius: 50%;
           background: #959595;
           line-height: 30px;
           margin: 0 10px;
-          i{
+          i {
             color: #fff;
           }
         }
       }
-
     }
-    &:nth-child(4){
+    &:nth-child(4) {
       text-align: right;
-      li{
-        img{
+      li {
+        img {
           width: 140px;
         }
       }
@@ -434,9 +437,11 @@ footer {
     ul {
       padding: 0;
       list-style: none;
-      li{
+      li {
         font-size: 14px;
       }
     }
   }
 }
+@import "responsive";
+@import "modal";
