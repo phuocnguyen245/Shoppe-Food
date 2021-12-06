@@ -214,7 +214,7 @@ footer {
     }
     .container-header {
       position: static;
-      height: 220px;
+      height: auto;
       .container {
         width: 100%;
         .row {
@@ -234,9 +234,6 @@ footer {
             width: 100px;
             padding: 0;
             margin: 0 auto;
-            &.active-color {
-              display: none;
-            }
             a {
               width: 100%;
               text-align: center;

@@ -434,7 +434,7 @@ footer .footer-col ul li {
   }
   header .container-header {
     position: static;
-    height: 220px;
+    height: auto;
   }
   header .container-header .container {
     width: 100%;
@@ -468,9 +468,6 @@ footer .footer-col ul li {
     width: 100px;
     padding: 0;
     margin: 0 auto;
-  }
-  header .container-header .container .row .nav-item.active-color {
-    display: none;
   }
   header .container-header .container .row .nav-item a {
     width: 100%;

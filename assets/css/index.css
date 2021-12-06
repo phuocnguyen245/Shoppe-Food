@@ -34,7 +34,7 @@ html, body {
     padding: 0 !important;
 }
 .active-color{
-    display: block;
+    display: none;
     height: calc(100% - 4px);
     border-bottom: 4px solid  #f14d2d !important;
     font-weight: bold;
