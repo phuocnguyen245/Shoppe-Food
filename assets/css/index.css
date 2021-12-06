@@ -42,6 +42,9 @@ html, body {
 .active-color p{
     color: #f14d2d;
 }
+.primary-color{
+    color: #f14d2d;
+}
 .fz-14{
     font-size: 14px;
 }

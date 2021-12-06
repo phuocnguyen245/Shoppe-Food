@@ -7,6 +7,7 @@
   right: 50px;
   text-align: center;
   cursor: pointer;
+  z-index: 200;
   i {
     color: white;
   }
@@ -24,26 +25,10 @@
   }
 }
 @media (min-width: 1024px) {
-
 }
 
 /* Tablet */
-@media (min-width: 740px) and (max-width: 1024px) {
-  header {
-    .container-header {
-      .container {
-        max-width: 100% !important;
-        margin: 0 !important;
-        padding: 0 20px;
-        .row {
-          margin: 0 !important;
-          .nav-item {
-            padding: 10px 6px !important;
-          }
-        }
-      }
-    }
-  }
+@media (min-width: 740px) and (max-width: 1023px) {
   .content-container-left {
     display: none;
   }
@@ -70,62 +55,16 @@
       }
     }
   }
+  .mobile-nav {
+    display: block;
+  }
+  .scroll-to-top {
+    bottom: 90px;
+  }
 }
 
 /* Mobile */
 @media (max-width: 739px) {
-  header {
-    .btn-search,
-    .btn-login {
-      display: none;
-    }
-    .dropdown-menu {
-      right: -50%;
-    }
-    .container-header {
-      position: static;
-      height: 220px;
-      .container {
-        width: 100%;
-        .row {
-          display: flex;
-          margin: 0;
-          padding: 0;
-          justify-content: space-between;
-          .flex {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center !important;
-            width: fit-content;
-            margin-top: 20px;
-          }
-          .nav-item {
-            text-align: center;
-            width: 100px;
-            padding: 0;
-            margin: 0 auto;
-            &.active-color {
-              display: none;
-            }
-            a {
-              width: 100%;
-              text-align: center;
-              img {
-                display: block !important;
-                width: 50px;
-                text-align: center;
-                margin: 0 auto;
-              }
-              p {
-                font-size: 12px;
-                word-break: keep-all;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
   .content-container-left {
     display: none;
   }
@@ -136,6 +75,7 @@
         width: 100%;
         float: none;
         margin-top: 20px;
+        margin-bottom: 50px;
         .right__local {
           padding: 10px;
         }
@@ -174,9 +114,9 @@
                 .right-item__disc {
                   height: 20px;
                   line-height: 20px;
-                  &:nth-child(2){
-                    div{
-                      &:nth-child(2){
+                  &:nth-child(2) {
+                    div {
+                      &:nth-child(2) {
                         display: flex !important;
                       }
                     }
@@ -224,8 +164,10 @@
       }
     }
   }
-  footer,
-  .banner-container {
-    display: none;
+  .mobile-nav {
+    display: block;
+  }
+  .scroll-to-top {
+    display: none !important;
   }
 }

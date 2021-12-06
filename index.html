@@ -30,7 +30,9 @@
                     <div class="container p-2">
                         <div class="row p-2 justify-content-between align-items-center">
                             <div class="col-2 p-0">
-                                <img class="shopeefoodlogo" src="./assets/img/shopeefoodvn.png" alt="">
+                                <a href="index.html">
+                                    <img class="shopeefoodlogo" src="./assets/img/shopeefoodvn.png" alt="">
+                                </a>
                             </div>
                             <div class="dropdown">
                                 <button class="btn btn-light dropdown-toggle fz-14" type="button"
@@ -57,43 +59,43 @@
                             </div>
                             <div class="flex justify-content-start">
                                 <div class="nav-item active-color">
-                                    <a href="" class="">
+                                    <a href="#" class="">
                                         <img style="display: none;" src="./assets/img/imgsmall1.png" alt="">
                                         <p>Đồ ăn</p>
                                     </a>
                                 </div>
                                 <div class="nav-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img style="display: none;" src="./assets/img/imgsmall2.png" alt="">
                                         <p>Thực phẩm</p>
                                     </a>
                                 </div>
                                 <div class="nav-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img style="display: none;" src="./assets/img/imgsmall3.png" alt="">
                                         <p>Bia</p>
                                     </a>
                                 </div>
                                 <div class="nav-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img style="display: none;" src="./assets/img/imgsmall4.png" alt="">
                                         <p>Hoa</p>
                                     </a>
                                 </div>
                                 <div class="nav-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img style="display: none;" src="./assets/img/imgsmall5.png" alt="">
                                         <p>Siêu thị</p>
                                     </a>
                                 </div>
                                 <div class="nav-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img style="display: none;" src="./assets/img/imgsmall6.png" alt="">
                                         <p>Thuốc</p>
                                     </a>
                                 </div>
                                 <div class="nav-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img style="display: none;" src="./assets/img/imgsmall7.png" alt="">
                                         <p>Thú cưng</p>
                                     </a>
@@ -104,7 +106,7 @@
                                     <i class="fa fa-search"></i>
                                 </div>
                                 <div class="btn-login">
-                                    <button class="btn">Đăng nhập</button>
+                                    <a href="login.html" class="btn">Đăng nhập</a>
                                 </div>
                             </div>
                         </div>
@@ -652,6 +654,29 @@
                 </div>
             </div>
 
+            <!-- Mobile Menu -->
+
+            <nav class="mobile-nav">
+                <div class="container-fluid">
+                    <div class="mobile-nav-container">
+                        <div class="row">
+                            <div class="col-3 col-md-3 col-xl-3 col-lg-3 mobile-nav__item">
+                                <a href="login.html"><i class="fas fa-home primary-color"></i></a>
+                            </div>
+                            <div class="col-3 col-md-3 col-xl-3 col-lg-3 mobile-nav__item">
+                                <a href="login.html"><i class="far fa-file-alt"></i></a>
+                            </div>
+                            <div class="col-3 col-md-3 col-xl-3 col-lg-3 mobile-nav__item">
+                                <a href="login.html"><i class="fas fa-bell"></i></a>
+                            </div>
+                            <div class="col-3 col-md-3 col-xl-3 col-lg-3 mobile-nav__item">
+                                <a href="login.html"><i class="fas fa-user"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
             <!-- Banner -->
 
             <div class="container">
@@ -843,6 +868,9 @@
             </footer>
         </div>
     </div>
+
+    <!-- Modal -->
+
     <div class="scroll-to-top">
         <a href="#header" class="scroll__top">
             <i class="fa fa-chevron-up" aria-hidden="true"></i>
@@ -851,7 +879,7 @@
     <script>
 
         // IIFE
-        (function unFixedMenu() {
+        (function handleInterface() {
             const $ = document.querySelector.bind(document)
             const $$ = document.querySelectorAll.bind(document)
 
@@ -879,6 +907,32 @@
                     scrollTop.classList.remove('block')
                 }
             }
+            
+            /////////////////////////////
+            
+            const navMobileItems = $$('.mobile-nav__item')
+            const navMobileIcons = $$('.mobile-nav__item a i')
+
+            for (let i = 0; i < navMobileItems.length; i++) {
+                let navItem = navMobileItems[i]
+                let icon = navMobileIcons[i]
+                navMobileItems.onclick = () => {
+                    $('.mobile-nav__item a i.primary-color').classList.remove('primary-color')
+                    icon.classList.add('primary-color')
+                }
+            }
+            
+            ////////////////////////////////
+            const navItems = $$('.nav-item')
+
+            for (let i = 0; i < navItems.length; i++){
+                let navItem = navItems[i]
+                navItem.onclick = () =>{
+                    $('.nav-item.active-color').classList.remove('active-color')
+                    navItem.classList.add('active-color')
+                }
+            }
+            
         })()
 
 
