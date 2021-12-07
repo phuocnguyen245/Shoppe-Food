@@ -246,7 +246,7 @@ b {
   border-bottom: 1px solid #ccc;
 }
 
-.content-container-right .container .right .right-wrapper .right__list .right-item a .right-item__disc {
+.content-container-right .container .right .right-wrapper .right__list .right-item a .right-item__disc:last-child {
   padding-left: 15px;
 }
 

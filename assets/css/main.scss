@@ -206,7 +206,9 @@ b {
                 }
               }
               .right-item__disc {
-                padding-left: 15px;
+                &:last-child{
+                  padding-left: 15px;
+                }
                 i {
                   color: $primary-color;
                 }
@@ -306,4 +308,4 @@ b {
 }
 
 @import "header-footer";
-@import "modal";
+@import "responsive";
