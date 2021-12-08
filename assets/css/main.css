@@ -137,7 +137,6 @@ b {
   margin-top: 90px;
   position: relative;
   margin-bottom: 75px;
-  min-height: calc(100vh - 123px);
 }
 
 .content-container-right .container .right .right__local {
