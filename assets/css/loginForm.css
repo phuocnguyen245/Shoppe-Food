@@ -19,6 +19,10 @@
   margin-bottom: 20px;
 }
 
+.login-form .login-container .button-group {
+  margin-bottom: 20px;
+}
+
 .login-form .login-container .button-group .button-control {
   position: relative;
   height: 35px;
@@ -69,9 +73,22 @@
   top: 5px;
 }
 
+.login-form .login-container .login-alert {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #f2dede;
+  text-align: left;
+  color: #a94442;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .login-form .login-container .p-title {
   font-size: 13px;
-  margin: 30px 0 10px;
+  margin: 10px 0 10px;
   color: #464646;
 }
 

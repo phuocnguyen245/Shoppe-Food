@@ -18,6 +18,7 @@ $blue: #0288d1;
       margin-bottom: 20px;
     }
     .button-group {
+      margin-bottom: 20px;
       .button-control {
         position: relative;
         height: 35px;
@@ -60,9 +61,20 @@ $blue: #0288d1;
         }
       }
     }
+    .login-alert {
+      display:none;
+      margin-top: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      background-color: #f2dede;
+      text-align: left;
+      color: #a94442;
+      transition: 0.5s;
+    }
     .p-title {
       font-size: 13px;
-      margin: 30px 0 10px;
+      margin: 10px 0 10px;
       color: #464646;
     }
     .form {
@@ -112,7 +124,7 @@ $blue: #0288d1;
       .form-submit {
         width: 100%;
         text-transform: uppercase;
-        background-color: #0288d1;;
+        background-color: #0288d1;
         border: none;
         color: #fff;
         border-radius: 3px;
@@ -126,7 +138,7 @@ $blue: #0288d1;
       text-align: center;
       margin: 30px 0;
       u {
-        color: #0288d1;;
+        color: #0288d1;
       }
     }
   }
