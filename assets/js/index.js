@@ -68,15 +68,13 @@ const handleLogin = () => {
         }
         const arrayUsersJson = JSON.parse(window.localStorage.getItem('usersLocalStrorage'));
         const isUser = arrayUsersJson.some(arrayUserJson => {
-            if (arrayUserJson.username == user.username && arrayUserJson.password == user.password) {
-                return true
-            }
-            return false
+            return (arrayUserJson.username == user.username && arrayUserJson.password == user.password) ? true : false
+
         })
         console.log(isUser);
-        if(isUser){
+        if (isUser) {
             window.location.href = "index.html"
-        }else{
+        } else {
             document.querySelector('.login-alert').style.display = 'block'
             document.querySelector('.login-alert').innerText = 'Vui lòng nhập lại'
         }
