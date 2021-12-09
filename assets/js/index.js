@@ -44,14 +44,21 @@ const setUserName = () => {
     const changeName = document.querySelector('.btn-login a')
     const currentUser = JSON.parse(window.localStorage.getItem('currentUser'));
     const username = currentUser.username;
-    changeName.innerText = 'Đăng xuất' + username
+
     const logout = {
         username: null,
         password: null
     }
+
+    if (currentUser.username == null && currentUser.password == null) {
+        changeName.innerText = 'Đăng nhập'
+    }
+    else{
+        changeName.innerText = 'Đăng xuất'+username
+    }
     changeName.onclick = () => {
         window.localStorage.setItem('currentUser', JSON.stringify(logout))
-        changeName.location.href = 'login.html';
+        changeName.innerText = 'Đăng xuất ' + username
     }
 }
 setUserName()
