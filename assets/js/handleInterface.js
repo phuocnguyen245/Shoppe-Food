@@ -1,5 +1,4 @@
 function handleInterface() {
-
     setTimeout(function () {
         const $ = document.querySelector.bind(document)
         const $$ = document.querySelectorAll.bind(document)
@@ -10,7 +9,7 @@ function handleInterface() {
 
         const unFixed = $('.content-container-left')
 
-        const top = containerRightHeight - screen.availHeight - 10
+        const top = containerRightHeight - screen.availHeight + 50
 
         const scrollTop = $('.scroll-to-top')
         document.onscroll = function () {
@@ -61,6 +60,10 @@ function handleInterface() {
             }
         }
     }, 500)
-
+    const closeModalCart = document.querySelector('.close__cart')
+    closeModalCart.onclick = () => {
+        document.querySelector('.cart').classList.remove('open')
+    }
 }
 handleInterface()
+

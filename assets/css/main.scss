@@ -206,7 +206,7 @@ b {
                 }
               }
               .right-item__disc {
-                &:last-child{
+                &:last-child {
                   padding-left: 15px;
                 }
                 i {
@@ -278,7 +278,7 @@ b {
   width: 100%;
   .container-fluid {
     width: 100% !important;
-    max-width:100% !important;
+    max-width: 100% !important;
     .mobile-nav-container {
       width: calc(100% - 0px);
       position: fixed;
@@ -307,5 +307,106 @@ b {
   }
 }
 
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  &.open {
+    display: flex;
+  }
+  .cart-wrapper {
+    width: 850px !important;
+    .cart-container {
+      background-color: #fff;
+      width: 850px;
+      max-width: 100%;
+      position: relative;
+      animation: modalFaceIn ease 0.5s;
+      .cart__list {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        max-height: 300px;
+        .right-item {
+          padding: 10px 0;
+          a {
+            display: flex;
+            text-decoration: none;
+            img {
+              width: 150px;
+              height: 100px;
+              padding-left: 10px;
+            }
+            div {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding-left: 10px;
+              width: 100%;
+              .right-item__desc {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+      .cart__footer {
+        padding: 10px 0;
+        display: flex;
+        justify-content: flex-end;
+        background-color: #f9f9f9;
+        text-align: right;
+        padding-right: 30px;
+        button {
+          outline: none;
+          width: 200px;
+          line-height: 30px;
+          cursor: pointer;
+          background-color: #ee4d2d;
+          color: #fff;
+          float: right;
+          padding-right: 30px;
+          border: none;
+          &:hover{
+            opacity: 0.8;
+          }
+        }
+      }
+      .close__cart {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 6px 12px;
+        line-height: 30px;
+        background-color: #ee4d2d;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.8;
+        }
+        i {
+          font-size: 20px;
+          margin: 0 auto;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+@keyframes modalFaceIn {
+  from {
+    opacity: 0;
+    transform: translateY(-140px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @import "header-footer";
 @import "responsive";

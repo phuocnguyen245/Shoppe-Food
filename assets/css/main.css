@@ -137,6 +137,7 @@ b {
   margin-top: 90px;
   position: relative;
   margin-bottom: 75px;
+  min-height: 100vh;
 }
 
 .content-container-right .container .right .right__local {
@@ -351,6 +352,158 @@ b {
   font-size: 22px;
 }
 
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.cart.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart .cart-wrapper {
+  width: 850px !important;
+}
+
+.cart .cart-wrapper .cart-container {
+  background-color: #fff;
+  width: 850px;
+  max-width: 100%;
+  position: relative;
+  -webkit-animation: modalFaceIn ease 0.5s;
+          animation: modalFaceIn ease 0.5s;
+}
+
+.cart .cart-wrapper .cart-container .cart__list {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 300px;
+}
+
+.cart .cart-wrapper .cart-container .cart__list .right-item {
+  padding: 10px 0;
+}
+
+.cart .cart-wrapper .cart-container .cart__list .right-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+
+.cart .cart-wrapper .cart-container .cart__list .right-item a img {
+  width: 150px;
+  height: 100px;
+  padding-left: 10px;
+}
+
+.cart .cart-wrapper .cart-container .cart__list .right-item a div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.cart .cart-wrapper .cart-container .cart__list .right-item a div .right-item__desc {
+  display: block;
+}
+
+.cart .cart-wrapper .cart-container .cart__footer {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #f9f9f9;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.cart .cart-wrapper .cart-container .cart__footer button {
+  outline: none;
+  width: 200px;
+  line-height: 30px;
+  cursor: pointer;
+  background-color: #ee4d2d;
+  color: #fff;
+  float: right;
+  padding-right: 30px;
+  border: none;
+}
+
+.cart .cart-wrapper .cart-container .cart__footer button:hover {
+  opacity: 0.8;
+}
+
+.cart .cart-wrapper .cart-container .close__cart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6px 12px;
+  line-height: 30px;
+  background-color: #ee4d2d;
+  cursor: pointer;
+}
+
+.cart .cart-wrapper .cart-container .close__cart:hover {
+  opacity: 0.8;
+}
+
+.cart .cart-wrapper .cart-container .close__cart i {
+  font-size: 20px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+@-webkit-keyframes modalFaceIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-140px);
+            transform: translateY(-140px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes modalFaceIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-140px);
+            transform: translateY(-140px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 header .container-header {
   position: fixed;
   top: 0;
@@ -427,10 +580,26 @@ header .container-header .container .btn-search {
   cursor: pointer;
   font-size: 25px;
   font-weight: 100;
+  position: relative;
 }
 
 header .container-header .container .btn-search:hover {
   color: #f14d2d;
+}
+
+header .container-header .container .btn-search .qty {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  padding: 0 6px;
+  border-radius: 50%;
+  background: #f14d2d;
+}
+
+header .container-header .container .btn-search .qty p {
+  margin-bottom: 0 !important;
+  color: #fff;
+  font-size: 12px;
 }
 
 header .container-header .container .btn-login .btn {

@@ -29,6 +29,11 @@ Promise.all([
         }
     })
     .then((item) => {
+        const formatter = new Intl.NumberFormat('vi-VI', {
+            style: 'currency',
+            currency: 'VND',
+            minimumFractionDigits: 0
+        })
         // get category
         item.categoryValue.map((category) => {
 
@@ -51,7 +56,7 @@ Promise.all([
             rightTitle.appendChild(spanTitle)
             // push rightTitle into rightWrapper
             rightWrapper.appendChild(rightTitle)
-            //push rightWrapper into rightContainer
+            // push rightWrapper into rightContainer
             rightContainer.appendChild(rightWrapper)
 
             // if category id === shop category
@@ -61,7 +66,10 @@ Promise.all([
 
             let shopListHtml = ``;
             // get each shop by category and renderData
+
             shopByCategory.forEach((shop) => {
+                const cost = formatter.format(`${shop.cost}`)
+                // console.log(cost);
                 shopListHtml +=
                     `
                     <div class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-4 p-1 right-item" id="${shop.id}">
@@ -75,7 +83,7 @@ Promise.all([
                                 <div class="row flex justify-content-start flex-nowrap ml-1 right-item__disc">
                                     <div class="flex justify-content-start pl-1 pr-1">
                                         <i class="fas fa-tag pr-1 "></i>
-                                        <p class="m-0">${shop.cost}</p>
+                                        <p class="m-0">${cost}</p>
                                     </div>
                                     <div class="flex justify-content-start align-center pl-1 pr-1">
                                         <i class="fa fa-dollar pr-1"></i>
@@ -109,20 +117,53 @@ Promise.all([
         const shopId = []
         shopItems.forEach(item1 => {
             item1.onclick = () => {
+                const cart = document.querySelector('.cart-container .cart__list')
                 shopId.push(Number(item1.id))
-                console.log(shopId);
+
                 const findShopById = item.shopValue.filter(items => {
                     return shopId.some(id => items.id == id)
                 })
-                console.log(findShopById);
+                document.querySelector('.qty p').innerText = findShopById.length
                 const getCost = findShopById.reduce((a, b) => {
                     return b.cost + a
                 }, 0)
-                console.log(getCost);
+                const sumCost = formatter.format(`${getCost}`)
+
+                document.querySelector('.btn-search').onclick = () => {
+                    document.querySelector('.cart').classList.add('open')
+                    const a = findShopById.map(renderShop => {
+                        return `
+                        <div class="right-item" id="${renderShop.id}">
+                            <a class="" href="#">
+                                <img src="${renderShop.img}" alt="">
+                                <div>
+                                    <div class="right-item__desc">
+                                        <p class="m-0"title="${renderShop.shopName}">${renderShop.shopName}
+                                        <p class="m-0"title="${renderShop.address}">${renderShop.address}</p>
+                                    </div>
+                                    <div class="row flex justify-content-start flex-nowrap ml-1 right-item__disc">
+                                        <div class="flex justify-content-start pl-1">
+                                            <i class="fas fa-tag pr-1 "></i>
+                                            <p class="m-0">${renderShop.cost}</p>
+                                        </div>
+                                        <div class="flex justify-content-start pl-1">
+                                            <i class="fas fa-tag pr-1 "></i>
+                                            <p class="m-0">${renderShop.cost}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>`
+                    })
+                    cart.innerHTML = a.join(' ')
+                    const payment = `<button class="clear-float" type="button">Ok&nbsp;+&nbsp${sumCost}</button>`
+                    document.querySelector('.cart__footer').innerHTML = payment
+                }
             }
         })
 
     })
-    // Payment with Stripe
 
-    // https://www.youtube.com/watch?v=1r-F3FIONl8&t
+// Payment with Stripe
+
+// https://www.youtube.com/watch?v=1r-F3FIONl8&t
