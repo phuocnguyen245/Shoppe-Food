@@ -1,0 +1,46 @@
+{
+  "categoryJsons": [
+    {
+      "id": 1,
+      "categoryName": "Đồ ăn"
+    },
+    {
+      "id": 2,
+      "categoryName": "Đồ uống"
+    },
+    {
+      "id": 3,
+      "categoryName": "Đồ chay"
+    },
+    {
+      "id": 4,
+      "categoryName": "Đồ độc ác"
+    }
+  ],
+  "shopJsons": [
+    {
+      "id": 1,
+      "category": 1,
+      "img": "./assets/img/item1.jpg",
+      "shopName": "Quán ăn Phương Heo",
+      "address": "An Nhơn9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng",
+      "cost": 10000
+    },
+    {
+      "id": 2,
+      "category": 1,
+      "img": "./assets/img/item1.jpg",
+      "shopName": "Quán ăn Phương Bự",
+      "address": "An Nhơn9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng",
+      "cost": 15000
+    },
+    {
+      "id": 3,
+      "category": 2,
+      "img": "./assets/img/item1.jpg",
+      "shopName": "Quán ăn Phương Lợn",
+      "address": "An Nhơn9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng",
+      "cost": 20000
+    }
+  ]
+}
