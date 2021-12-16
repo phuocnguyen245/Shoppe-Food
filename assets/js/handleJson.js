@@ -34,6 +34,7 @@ Promise.all([
             currency: 'VND',
             minimumFractionDigits: 0
         })
+
         // get category
         item.categoryValue.map((category) => {
 
@@ -69,10 +70,9 @@ Promise.all([
 
             shopByCategory.forEach((shop) => {
                 const cost = formatter.format(`${shop.cost}`)
-                // console.log(cost);
                 shopListHtml +=
                     `
-                    <div class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-4 p-1 right-item" id="${shop.id}">
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-4 p-1 blogBox moreBox right-item" id="${shop.id}">
                         <a class="" href="#">
                             <img src="${shop.img}" alt="">
                             <div>
@@ -105,23 +105,29 @@ Promise.all([
                     </div>
                 `
             });
+
             // create rightList contain all shops by category
             const rightList = document.createElement("div")
             rightList.className = 'right__list row m-0'
             // push shopListHtml into rightList HTML
-            rightList.innerHTML = shopListHtml
+
             // push rightList into rightWrapper
             rightWrapper.appendChild(rightList)
+
+            rightList.innerHTML = shopListHtml
         });
+
+
         const shopItems = document.querySelectorAll('.right-item')
         const shopId = []
-        shopItems.forEach(item1 => {
-            item1.onclick = () => {
+        shopItems.forEach(shopItem => {
+            // console.log(shopItem);
+            shopItem.onclick = () => {
                 const cart = document.querySelector('.cart-container .cart__list')
-                shopId.push(Number(item1.id))
+                shopId.push(Number(shopItem.id))
 
                 const findShopById = item.shopValue.filter(items => {
-                    return shopId.some(id => items.id == id)
+                    return shopId.some(id => items.id === id)
                 })
                 document.querySelector('.qty p').innerText = findShopById.length
                 const getCost = findShopById.reduce((a, b) => {
@@ -131,38 +137,76 @@ Promise.all([
 
                 document.querySelector('.btn-search').onclick = () => {
                     document.querySelector('.cart').classList.add('open')
-                    const a = findShopById.map(renderShop => {
+                    const renderCart = findShopById.map(render => {
                         return `
-                        <div class="right-item" id="${renderShop.id}">
+                        <div class="right-item" id="${render.id}">
                             <a class="" href="#">
-                                <img src="${renderShop.img}" alt="">
+                                <img src="${render.img}" alt="">
                                 <div>
                                     <div class="right-item__desc">
-                                        <p class="m-0"title="${renderShop.shopName}">${renderShop.shopName}
-                                        <p class="m-0"title="${renderShop.address}">${renderShop.address}</p>
+                                        <p class="m-0"title="${render.shopName}">${render.shopName}
+                                        <p class="m-0"title="${render.address}">${render.address}</p>
                                     </div>
                                     <div class="row flex justify-content-start flex-nowrap ml-1 right-item__disc">
                                         <div class="flex justify-content-start pl-1">
                                             <i class="fas fa-tag pr-1 "></i>
-                                            <p class="m-0">${renderShop.cost}</p>
+                                            <p class="m-0">${render.cost}</p>
                                         </div>
                                         <div class="flex justify-content-start pl-1">
                                             <i class="fas fa-tag pr-1 "></i>
-                                            <p class="m-0">${renderShop.cost}</p>
+                                            <p class="m-0">${render.cost}</p>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>`
                     })
-                    cart.innerHTML = a.join(' ')
+                    cart.innerHTML = renderCart.join('/n')
                     const payment = `<button class="clear-float" type="button">Ok&nbsp;+&nbsp${sumCost}</button>`
                     document.querySelector('.cart__footer').innerHTML = payment
                 }
             }
         })
-
+        console.log(item.shopValue);
+        const shopCategory = ``
+        item.shopValue.map((value) => {
+            shopCategory += `<li>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-4 p-1 blogBox moreBox right-item" id="${shop.id}">
+                        <a class="" href="#">
+                            <img src="${shop.img}" alt="">
+                            <div>
+                                <div class="right-item__desc">
+                                    <p class="m-0"title="${shop.shopName}">${shop.shopName}
+                                    <p class="m-0"title="${shop.address}">${shop.address}</p>
+                                </div>
+                                <div class="row flex justify-content-start flex-nowrap ml-1 right-item__disc">
+                                    <div class="flex justify-content-start pl-1 pr-1">
+                                        <i class="fas fa-tag pr-1 "></i>
+                                        <p class="m-0">${cost}</p>
+                                    </div>
+                                    <div class="flex justify-content-start align-center pl-1 pr-1">
+                                        <i class="fa fa-dollar pr-1"></i>
+                                        <p class="m-0">Giá 40k</p>
+                                    </div>
+                                </div>
+                                <div class="row flex justify-content-start flex-nowrap right-item__disc">
+                                    <div class="flex justify-content-start align-center mr-1">
+                                        <i class="fas fa-tag pl-1"></i>
+                                        <p class="m-0 pr-1">Mã giảm 20k</p>
+                                    </div>
+                                    <div class="flex justify-content-start align-center">
+                                        <i class="fas fa-motorcycle pl-1 pr-1"></i>
+                                        <p class="m-0 pr-1">Giá 20k</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </li>`
+        })
+        document.querySelector('#pagingBox').innerHTML = shopCategory
     })
+
 
 // Payment with Stripe
 

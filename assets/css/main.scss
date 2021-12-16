@@ -339,7 +339,7 @@ b {
             display: flex;
             text-decoration: none;
             img {
-              width: 150px;
+              min-width: 150px;
               height: 100px;
               padding-left: 10px;
             }

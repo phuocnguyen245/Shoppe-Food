@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <!-- jQuery code to show the working of this method -->
+    <!-- <script>
+        $(document).ready(function() {
+            $("p").slice(1, 4).css("background-color", "lightgreen");
+        });
+    </script> -->
+    <style>
+        body {
+            width: 500px;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to GeeksforGeeks !</h1>
+    <p>This is at index 0.</p>
+    <p>This is at index 1.</p>
+    <p>This is at index 2.</p>
+    <p>Tnhis is at index 3.</p>
+    <script>
+        const p = document.querySelectorAll("p")
+        const array = []
+        p.forEach((p1) => {
+            array.push(p1)
+        })
+        array.slice(1, 4).forEach((p1) => {
+            p1.style.color = "red"
+        })
+    </script>
+</body>
+
+</html>

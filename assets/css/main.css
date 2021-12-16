@@ -406,7 +406,7 @@ b {
 }
 
 .cart .cart-wrapper .cart-container .cart__list .right-item a img {
-  width: 150px;
+  min-width: 150px;
   height: 100px;
   padding-left: 10px;
 }

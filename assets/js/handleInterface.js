@@ -1,5 +1,5 @@
 function handleInterface() {
-    setTimeout(function () {
+    setTimeout(() => {
         const $ = document.querySelector.bind(document)
         const $$ = document.querySelectorAll.bind(document)
 
@@ -12,7 +12,7 @@ function handleInterface() {
         const top = containerRightHeight - screen.availHeight + 50
 
         const scrollTop = $('.scroll-to-top')
-        document.onscroll = function () {
+        document.onscroll = () => {
             const scroll = document.documentElement.scrollTop
             if (scroll > top) {
                 unFixed.classList.add('absolute')
@@ -46,7 +46,7 @@ function handleInterface() {
         ////////////////////////////
         const navItems = $$('.nav-item')
 
-        window.onscroll = function () {
+        window.onscroll = () => {
             for (let i = 0; i < navItems.length; i++) {
                 let navItem = navItems[i]
                 navItem.onclick = () => {

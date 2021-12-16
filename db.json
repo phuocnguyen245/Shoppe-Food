@@ -10,37 +10,115 @@
     },
     {
       "id": 3,
-      "categoryName": "Đồ chay"
+      "categoryName": "Ăn vặt"
     },
     {
       "id": 4,
       "categoryName": "Đồ độc ác"
+    },
+    {
+      "id": 5,
+      "categoryName": "Đồ khùng"
     }
   ],
   "shopJsons": [
     {
       "id": 1,
       "category": 1,
-      "img": "./assets/img/item1.jpg",
-      "shopName": "Quán ăn Phương Heo",
-      "address": "An Nhơn9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng",
-      "cost": 10000
+      "img": "./assets/img/da3.jpg",
+      "shopName": "Takoyaki Hatachi - Lê Đình Lý",
+      "address": "217 Nguyễn Hoàng, Quận Hải Châu, Đà Nẵng",
+      "cost": 30000
     },
     {
       "id": 2,
       "category": 1,
-      "img": "./assets/img/item1.jpg",
-      "shopName": "Quán ăn Phương Bự",
-      "address": "An Nhơn9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng",
-      "cost": 15000
+      "img": "./assets/img/da2.jpg",
+      "shopName": "Bún Đậu Hà Nội Xưa - Nguyễn Chí Thanh",
+      "address": "143/1 Nguyễn Chí Thanh, Quận Hải Châu, Đà Nẵng",
+      "cost": 35000
     },
     {
       "id": 3,
-      "category": 2,
+      "category": 1,
       "img": "./assets/img/item1.jpg",
-      "shopName": "Quán ăn Phương Lợn",
-      "address": "An Nhơn9, P. Mỹ An, Quận Sơn Trà, Đà Nẵng",
-      "cost": 20000
+      "shopName": "Ram Cuốn Cải H Vân",
+      "address": "Đối Diện 345 Hải Phòng, P. Tân Chính, Quận Thanh Khê, Đà Nẵng",
+      "cost": 35000
+    },
+    {
+      "id": 4,
+      "category": 1,
+      "img": "./assets/img/da3.jpg",
+      "shopName": "Takoyaki Hatachi - Lê Đình Lý",
+      "address": "217 Nguyễn Hoàng, Quận Hải Châu, Đà Nẵng",
+      "cost": 30000
+    },
+    {
+      "id": 5,
+      "category": 1,
+      "img": "./assets/img/da2.jpg",
+      "shopName": "Bún Đậu Hà Nội Xưa - Nguyễn Chí Thanh",
+      "address": "143/1 Nguyễn Chí Thanh, Quận Hải Châu, Đà Nẵng",
+      "cost": 35000
+    },
+    {
+      "id": 6,
+      "category": 1,
+      "img": "./assets/img/item1.jpg",
+      "shopName": "Ram Cuốn Cải H Vân",
+      "address": "Đối Diện 345 Hải Phòng, P. Tân Chính, Quận Thanh Khê, Đà Nẵng",
+      "cost": 35000
+    }
+    ,
+
+    {
+      "id": 7,
+      "category": 2,
+      "img": "./assets/img/du1.jpg",
+      "shopName": "Trà Sữa Money - Nguyễn Du",
+      "address": "19 Nguyễn Du, P. Thạch Thang, Quận Hải Châu, Đà Nẵng",
+      "cost": 30000
+    },
+    {
+      "id": 8,
+      "category": 2,
+      "img": "./assets/img/du2.jpeg",
+      "shopName": "KOI Thé - Nguyễn Văn Linh",
+      "address": "87 Nguyễn Văn Linh, Quận Hải Châu, Đà Nẵng",
+      "cost": 63227
+    },
+    {
+      "id": 9,
+      "category": 2,
+      "img": "./assets/img/du3.jpg",
+      "shopName": "The Alley - Trà Sữa Đài Loan - 2 Tháng 9",
+      "address": "Lô A29 - 30 Đường 2 Tháng 9, Quận Hải Châu, Đà Nẵng",
+      "cost": 65000
+    },
+    {
+      "id": 10,
+      "category": 3,
+      "img": "./assets/img/av1.jpg",
+      "shopName": "Phố Cổ Hà Nội - Triệu Nữ Vương",
+      "address": "152 Triệu Nữ Vương, Quận Hải Châu, Đà Nẵng",
+      "cost": 40000
+    },
+    {
+      "id": 11,
+      "category": 3,
+      "img": "./assets/img/av2.jpg",
+      "shopName": "Bánh Mì Nướng Muối Ớt Chang Chang - Ông Ích Khiêm",
+      "address": "56B Ông Ích Khiêm, Quận Hải Châu, Đà Nẵng",
+      "cost": 15000
+    },
+    {
+      "id": 12,
+      "category": 3,
+      "img": "./assets/img/av3.jpg",
+      "shopName": "Bánh tráng trộn - Xe máy",
+      "address": "Gần trạm dừng xe bus Lê Đình Lý",
+      "cost": 15000
     }
   ]
 }
