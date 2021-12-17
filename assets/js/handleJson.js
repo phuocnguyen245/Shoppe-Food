@@ -161,50 +161,50 @@ Promise.all([
                             </a>
                         </div>`
                     })
-                    cart.innerHTML = renderCart.join('/n')
+                    cart.innerHTML = renderCart.join('')
                     const payment = `<button class="clear-float" type="button">Ok&nbsp;+&nbsp${sumCost}</button>`
                     document.querySelector('.cart__footer').innerHTML = payment
                 }
             }
         })
         console.log(item.shopValue);
-        const shopCategory = ``
-        item.shopValue.map((value) => {
-            shopCategory += `<li>
-            <div class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-4 p-1 blogBox moreBox right-item" id="${shop.id}">
-                        <a class="" href="#">
-                            <img src="${shop.img}" alt="">
-                            <div>
-                                <div class="right-item__desc">
-                                    <p class="m-0"title="${shop.shopName}">${shop.shopName}
-                                    <p class="m-0"title="${shop.address}">${shop.address}</p>
-                                </div>
-                                <div class="row flex justify-content-start flex-nowrap ml-1 right-item__disc">
-                                    <div class="flex justify-content-start pl-1 pr-1">
-                                        <i class="fas fa-tag pr-1 "></i>
-                                        <p class="m-0">${cost}</p>
-                                    </div>
-                                    <div class="flex justify-content-start align-center pl-1 pr-1">
-                                        <i class="fa fa-dollar pr-1"></i>
-                                        <p class="m-0">Giá 40k</p>
-                                    </div>
-                                </div>
-                                <div class="row flex justify-content-start flex-nowrap right-item__disc">
-                                    <div class="flex justify-content-start align-center mr-1">
-                                        <i class="fas fa-tag pl-1"></i>
-                                        <p class="m-0 pr-1">Mã giảm 20k</p>
-                                    </div>
-                                    <div class="flex justify-content-start align-center">
-                                        <i class="fas fa-motorcycle pl-1 pr-1"></i>
-                                        <p class="m-0 pr-1">Giá 20k</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-            </li>`
-        })
-        document.querySelector('#pagingBox').innerHTML = shopCategory
+        // const shopCategory = ``
+        // item.shopValue.map((value) => {
+        //     shopCategory += `<li>
+        //     <div class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-4 p-1 blogBox moreBox right-item" id="${shop.id}">
+        //                 <a class="" href="#">
+        //                     <img src="${shop.img}" alt="">
+        //                     <div>
+        //                         <div class="right-item__desc">
+        //                             <p class="m-0"title="${shop.shopName}">${shop.shopName}
+        //                             <p class="m-0"title="${shop.address}">${shop.address}</p>
+        //                         </div>
+        //                         <div class="row flex justify-content-start flex-nowrap ml-1 right-item__disc">
+        //                             <div class="flex justify-content-start pl-1 pr-1">
+        //                                 <i class="fas fa-tag pr-1 "></i>
+        //                                 <p class="m-0">${cost}</p>
+        //                             </div>
+        //                             <div class="flex justify-content-start align-center pl-1 pr-1">
+        //                                 <i class="fa fa-dollar pr-1"></i>
+        //                                 <p class="m-0">Giá 40k</p>
+        //                             </div>
+        //                         </div>
+        //                         <div class="row flex justify-content-start flex-nowrap right-item__disc">
+        //                             <div class="flex justify-content-start align-center mr-1">
+        //                                 <i class="fas fa-tag pl-1"></i>
+        //                                 <p class="m-0 pr-1">Mã giảm 20k</p>
+        //                             </div>
+        //                             <div class="flex justify-content-start align-center">
+        //                                 <i class="fas fa-motorcycle pl-1 pr-1"></i>
+        //                                 <p class="m-0 pr-1">Giá 20k</p>
+        //                             </div>
+        //                         </div>
+        //                     </div>
+        //                 </a>
+        //             </div>
+        //     </li>`
+        // })
+        // document.querySelector('#pagingBox').innerHTML = shopCategory
     })
 
 
